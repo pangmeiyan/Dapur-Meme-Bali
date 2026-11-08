@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dapur Meme Bali</title>
+<meta name="description" content="Dapur Meme — oleh-oleh khas Bali: keripik, sambal, jajanan dan kopi. Pesan via WhatsApp, pesanan khusus dan kemitraan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout (after the user's two references): rounded photo hero with overlay copy, feature icon strip, about + stats grid, sales channels strip, category carousel with arrows, product range with WhatsApp ordering, hampers, "how to order" list beside a tall photo with a round badge, custom orders, brown partnership band with Balinese ornament, contact with map, FAQ, brown footer with a candi bentar gate. Cream, cocoa brown, kunyit amber, chili red, banana-leaf green; no black. */
+:root{
+  --cream:#FBF4E8; --paper:#FFFDF8; --sand:#F3E6D1; --ink:#3A2318; --muted:#86695A; --line:#EADBC5;
+  --brown:#5B3420; --brown-2:#6E4129; --chili:#C4402A; --chili-soft:#F8DDD5; --leaf:#3E6A39; --leaf-soft:#E2ECD9; --tur:#E8A93C; --tur-soft:#FBEBCB;
+  --wa:#1FA855; --bad:#B0443A; --bad-bg:#F8E3E0;
+  --display:"Bricolage Grotesque","Plus Jakarta Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --font:"Plus Jakarta Sans","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --glide:cubic-bezier(.22,1,.36,1); --ease:cubic-bezier(.65,0,.35,1);
+  --r-xl:32px; --r-lg:22px; --r-md:14px;
+  --orn:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23E8A93C' stroke-width='1.3' opacity='.28'%3E%3Cpath d='M0 32c8 0 12-6 12-12s-4-8-8-8-6 3-6 6 2 4 4 4'/%3E%3Cpath d='M64 32c-8 0-12 6-12 12s4 8 8 8 6-3 6-6-2-4-4-4'/%3E%3Cpath d='M32 22c3 4 3 7 0 10-3-3-3-6 0-10zM32 42c3-4 3-7 0-10-3 3-3 6 0 10zM22 32c4-3 7-3 10 0-3 3-6 3-10 0zM42 32c-4 3-7 3-10 0 3-3 6-3 10 0z'/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:700;letter-spacing:-0.025em;line-height:1.06;text-wrap:balance}
+:lang(zh-Hans) h1,:lang(zh-Hans) h2,:lang(zh-Hans) h3{letter-spacing:0;line-height:1.2}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--tur);outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+@media (min-width:800px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.section{padding-block:clamp(72px,9vw,120px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--chili)}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.h2{font-size:clamp(2.1rem,4.6vw,3.5rem)}
+.lede{color:var(--muted);max-width:52ch}
+.hl{color:var(--chili)}.hl2{color:var(--leaf)}.hl3{color:var(--tur)}
+.js .rv{opacity:0;transform:translateY(36px);transition:opacity 1s var(--glide),transform 1.1s var(--glide)}
+.js .rv.in{opacity:1;transform:none}
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#F1E1C8,#F8EEDD)}
+.ph img,.ph iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;transition:transform 1.6s var(--glide),opacity .6s}
+.ph img.broken{opacity:0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;border:1.5px solid transparent;background:var(--brown);color:var(--paper);font-weight:600;font-size:.94rem;cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .6s var(--glide),background .5s,box-shadow .6s var(--glide),color .4s,border-color .4s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(91,52,32,.55)}
+.btn svg{transition:transform .6s var(--glide)}
+.btn:hover svg.mv{transform:translateX(5px)}
+.btn.tur{background:var(--tur);color:var(--ink)}
+.btn.tur:hover{box-shadow:0 16px 30px -14px rgba(232,169,60,.8)}
+.btn.line{background:transparent;color:inherit;border-color:currentColor}
+.btn.light{background:var(--paper);color:var(--ink)}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.wa:hover{box-shadow:0 16px 30px -14px rgba(31,168,85,.7)}
+.btn.sm{height:42px;padding:0 18px;font-size:.86rem}
+.btn.full{width:100%}
+.round{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer;transition:background .4s,color .4s,transform .5s var(--glide),border-color .4s}
+.round:hover{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.round.dark{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.round:disabled{opacity:.35;pointer-events:none}
+.seg{display:inline-flex;border-radius:999px;padding:3px;background:var(--paper);border:1.5px solid var(--line);position:relative}
+.seg button{position:relative;z-index:1;border:0;background:none;padding:6px 11px;border-radius:999px;font-size:.78rem;font-weight:700;color:var(--muted);cursor:pointer;transition:color .45s var(--glide)}
+.seg button[aria-pressed="true"]{color:var(--paper)}
+.seg .knob{position:absolute;z-index:0;top:3px;bottom:3px;left:0;border-radius:999px;background:var(--brown);transition:transform .6s var(--glide),width .6s var(--glide)}
+.mp{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);font-size:.8rem;font-weight:700;text-decoration:none;transition:border-color .4s,transform .5s var(--glide)}
+.mp:hover{transform:translateY(-2px);border-color:var(--ink)}
+.mp i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* janur (palm-leaf fringe) divider, from Balinese penjor and sampian decorations */
+.janur{height:22px;background:var(--tur);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cpath d='M0 0h44v4c-4 0-7 2-8 6l-3 12-3-12c-1-4-4-6-8-6s-7 2-8 6l-3 12-3-12C7 6 4 4 0 4z'/%3E%3C/svg%3E") 0 0/44px 22px repeat-x;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cpath d='M0 0h44v4c-4 0-7 2-8 6l-3 12-3-12c-1-4-4-6-8-6s-7 2-8 6l-3 12-3-12C7 6 4 4 0 4z'/%3E%3C/svg%3E") 0 0/44px 22px repeat-x}
+.janur.flip{transform:scaleY(-1)}
+.janur.brown{background:var(--brown)}
+.weave{background-color:var(--sand);background-image:repeating-linear-gradient(45deg,rgba(91,52,32,.07) 0 6px,transparent 6px 12px),repeating-linear-gradient(-45deg,rgba(91,52,32,.07) 0 6px,transparent 6px 12px)}
+
+/* announcement + header */
+.announce{background:var(--brown);color:var(--sand);font-size:.84rem;font-weight:500;overflow:hidden;padding-top:env(safe-area-inset-top,0px)}
+.ann-track{position:relative;height:38px;display:grid;place-items:center;text-align:center;padding-inline:16px}
+.ann-track span{grid-area:1/1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;opacity:0;transform:translateY(10px);transition:opacity .8s var(--glide),transform .9s var(--glide)}
+.ann-track span.on{opacity:1;transform:none}
+.ann-track span.off{opacity:0;transform:translateY(-10px)}
+.ann-track span::before{content:"✦  ";color:var(--tur)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hdr{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--cream) 88%,transparent);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);transition:box-shadow .5s}
+.hdr.scrolled{box-shadow:0 12px 30px -24px rgba(58,35,24,.6)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:18px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;cursor:pointer;color:var(--ink);text-align:left}
+.logo .mk{width:46px;height:46px;border-radius:50%;background:var(--brown);color:var(--tur);display:grid;place-items:center}
+.logo b{display:block;font-family:var(--display);font-size:1.4rem;font-weight:800;letter-spacing:-0.03em;line-height:1}
+.logo small{display:block;font-size:.62rem;letter-spacing:.2em;color:var(--muted);margin-top:3px;font-weight:700}
+.nav{display:flex;gap:2px}
+.nav button{border:0;background:none;padding:9px 14px;border-radius:999px;font-size:.9rem;font-weight:600;cursor:pointer;transition:background .4s}
+.nav button:hover{background:var(--sand)}
+.hdr-r{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none}
+.mnav{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:6px 18px;display:grid;margin-bottom:12px}
+.mnav button{background:none;border:0;border-bottom:1px solid var(--line);text-align:left;padding:14px 0;font-size:1.05rem;font-weight:600;cursor:pointer}
+.mnav button:last-child{border-bottom:0}
+@media (max-width:1120px){.nav{display:none}.menu-btn{display:grid}}
+@media (max-width:600px){.hdr-r .btn{display:none}}
+
+/* hero */
+.hero{position:relative;border-radius:var(--r-xl);overflow:hidden;min-height:clamp(560px,82vh,760px);display:flex;flex-direction:column;justify-content:flex-end;color:var(--paper);isolation:isolate;margin-top:8px;background:var(--brown)}
+.hero > .ph{position:absolute;inset:0;z-index:-2}
+.hero > .ph img{top:-6%;height:112%;transform:translateY(var(--py,0px)) scale(1.04);transition:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(58,35,24,.88) 0%,rgba(58,35,24,.55) 45%,rgba(58,35,24,.05) 75%),linear-gradient(0deg,rgba(58,35,24,.5),rgba(58,35,24,0) 40%)}
+.hero-c{padding:clamp(28px,5vw,64px);display:grid;gap:22px;justify-items:start;max-width:760px}
+.hero .eyebrow{color:var(--tur)}
+.hero h1{font-size:clamp(2.7rem,6vw,5rem);font-weight:800;letter-spacing:-0.04em;line-height:.98}
+.hero h1 em{font-style:normal;color:var(--tur)}
+.hero p{max-width:46ch;font-size:1.05rem;color:rgba(255,253,248,.88)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pols{position:absolute;right:clamp(28px,6vw,96px);top:50%;transform:translateY(-46%);width:clamp(210px,21vw,290px);display:grid}
+.pol{grid-area:1/1;background:var(--paper);color:var(--ink);padding:10px 10px 14px;border-radius:14px;box-shadow:0 34px 60px -26px rgba(30,15,8,.6);transition:transform 1s var(--glide),box-shadow 1s var(--glide);cursor:pointer;text-align:left;border:0;font:inherit}
+.pol .ph{aspect-ratio:1;border-radius:8px}
+.pol b{display:block;font-family:var(--display);font-size:1rem;margin-top:10px}
+.pol small{display:block;font-size:.76rem;color:var(--muted)}
+.pol.p1{transform:translate(-46%,-22%) rotate(-7deg)}
+.pol.p2{transform:translate(10%,14%) rotate(5deg)}
+.pol:hover{z-index:3;box-shadow:0 44px 70px -26px rgba(30,15,8,.7)}
+.pol.p1:hover{transform:translate(-46%,-26%) rotate(-2deg) scale(1.04)}
+.pol.p2:hover{transform:translate(10%,10%) rotate(1deg) scale(1.04)}
+.pol:hover .ph img{transform:scale(1.08)}
+@media (max-width:1000px){.pols{display:none}}
+.gate{position:absolute;right:clamp(16px,3vw,32px);top:clamp(16px,3vw,32px);width:clamp(64px,8vw,96px);color:var(--tur);opacity:.9}
+@media (max-width:860px){.hero::before{background:linear-gradient(0deg,rgba(58,35,24,.92) 20%,rgba(58,35,24,.35) 70%,rgba(58,35,24,.15))}}
+
+/* promise band (replaces the six separate cards) */
+.promise{margin-top:14px;background:var(--brown) var(--orn);color:var(--paper);border-radius:var(--r-xl);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding:24px 6px}
+.pr{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:4px 12px}
+.pr + .pr::before{content:"";position:absolute;left:0;top:12%;bottom:12%;width:1px;background:rgba(255,253,248,.18)}
+.pr .ic{width:50px;height:50px;border-radius:50%;background:rgba(232,169,60,.16);color:var(--tur);display:grid;place-items:center;transition:transform .8s var(--glide),background .6s var(--glide),color .6s var(--glide)}
+.pr:hover .ic{transform:translateY(-5px) rotate(-10deg);background:var(--tur);color:var(--brown)}
+.pr b{font-size:.88rem;font-weight:600;line-height:1.3}
+.pr small{font-size:.74rem;color:rgba(255,253,248,.62);line-height:1.35}
+@media (max-width:1000px){.promise{grid-template-columns:repeat(3,1fr);row-gap:22px}.pr:nth-child(4)::before{display:none}}
+@media (max-width:540px){.promise{grid-template-columns:1fr 1fr}.pr:nth-child(odd)::before{display:none}.pr:nth-child(4)::before{display:block}}
+
+/* origins: where the ingredients come from, on a woven (batik-like) band */
+.batik{background-color:var(--sand);background-image:repeating-linear-gradient(45deg,rgba(91,52,32,.07) 0 6px,transparent 6px 12px),repeating-linear-gradient(-45deg,rgba(91,52,32,.07) 0 6px,transparent 6px 12px);border-radius:var(--r-xl);padding:clamp(36px,5vw,64px) clamp(20px,3vw,40px)}
+.og-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.og-head > div{display:grid;gap:12px;max-width:620px}
+.origins{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.og{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:3/4.2;color:#fff;isolation:isolate;transition:transform .9s var(--glide),box-shadow .9s var(--glide),border-radius .9s var(--glide)}
+.og .ph{position:absolute;inset:0;z-index:-2}
+.og::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(58,35,24,0) 35%,rgba(58,35,24,.88) 100%)}
+.og:hover{transform:translateY(-8px);box-shadow:0 36px 60px -34px rgba(58,35,24,.7);border-radius:140px 140px var(--r-xl) var(--r-xl)}
+.og:hover .ph img{transform:scale(1.08)}
+.og .ob{position:absolute;left:20px;right:20px;bottom:20px;display:grid;gap:4px}
+.og .reg{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tur);font-weight:700}
+.og h3{font-size:1.45rem}
+.og p{font-size:.86rem;color:rgba(255,253,248,.85);display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .8s var(--glide),opacity .6s var(--glide)}
+.og p span{overflow:hidden}
+.og:hover p{grid-template-rows:1fr;opacity:1}
+@media (hover:none){.og p{grid-template-rows:1fr;opacity:1}}
+@media (max-width:1000px){.origins{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.origins{grid-template-columns:1fr}.og{aspect-ratio:4/3.4}}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:start}
+.about-l{display:grid;gap:20px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;list-style:none;margin:0;padding:0}
+.checks li{display:flex;gap:10px;align-items:center;font-size:.94rem;font-weight:600}
+.checks li::before{content:"";width:22px;height:22px;flex:none;border-radius:50%;background:var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.5 2.5L14 7.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/22px no-repeat}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px;display:grid;gap:4px}
+.stat:nth-child(1){background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.stat:nth-child(1) span{color:rgba(255,253,248,.75)}
+.stat:nth-child(1) b{color:var(--tur)}
+.stat b{font-family:var(--display);font-size:clamp(2.4rem,4vw,3.2rem);font-weight:800;line-height:1;color:var(--chili);font-variant-numeric:tabular-nums}
+.stat span{font-size:.86rem;color:var(--muted)}
+.about-img{grid-column:1/-1;display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:8px}
+.about-img .ph{border-radius:var(--r-xl);height:clamp(220px,26vw,340px)}
+@media (max-width:900px){.about{grid-template-columns:1fr}.about-img{grid-template-columns:1fr}.checks{grid-template-columns:1fr}}
+
+/* channels strip */
+.channels{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-block:30px;border-block:1.5px solid var(--line);margin-top:clamp(56px,7vw,88px)}
+.channels > span{font-size:.82rem;font-weight:700;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.ch-list{display:flex;gap:clamp(18px,4vw,48px);flex-wrap:wrap;align-items:center}
+.ch-list b{font-family:var(--display);font-size:clamp(1.1rem,2vw,1.45rem);font-weight:800;letter-spacing:-0.02em;color:var(--brown);opacity:.75;transition:opacity .4s}
+.ch-list b:hover{opacity:1}
+
+/* category carousel */
+.catrow{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(20px,3vw,40px);align-items:start}
+.cat-side{display:grid;gap:16px;align-content:start}
+.carousel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,calc((100% - 32px)/3));gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.carousel::-webkit-scrollbar{display:none}
+.cat{border:0;padding:0;background:none;text-align:left;cursor:pointer;scroll-snap-align:start;display:grid;gap:12px}
+.cat .ph{aspect-ratio:3/4;border-radius:var(--r-xl);transition:border-radius .8s var(--glide)}
+.cat:hover .ph{border-radius:120px 120px var(--r-xl) var(--r-xl)}
+.cat:hover .ph img{transform:scale(1.07)}
+.cat h3{font-size:1.35rem}
+.cat small{color:var(--muted);font-size:.86rem}
+.car-ctl{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+@media (max-width:900px){.catrow{grid-template-columns:1fr}.carousel{grid-auto-columns:minmax(220px,70%)}}
+
+/* product range */
+.range{background:var(--paper);border-radius:var(--r-xl);padding:clamp(28px,4vw,56px) clamp(20px,3vw,40px);border:1.5px solid var(--line)}
+.range-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.range-head > div{display:grid;gap:12px;max-width:620px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chips button{height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--cream);font-size:.9rem;font-weight:600;cursor:pointer;transition:background .5s var(--glide),color .5s,border-color .5s,transform .5s var(--glide)}
+.chips button:hover{transform:translateY(-2px)}
+.chips button[aria-pressed="true"]{background:var(--brown);border-color:var(--brown);color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.prod{background:var(--cream);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:10px;display:grid;gap:10px;align-content:start;cursor:pointer;transition:transform .8s var(--glide),box-shadow .8s var(--glide),opacity .3s,border-color .5s,background .5s;text-align:left}
+.prod:hover{transform:translateY(-8px);box-shadow:0 34px 56px -34px rgba(58,35,24,.55);border-color:transparent;background:#fff}
+.prod:hover .ph img{transform:scale(1.08)}
+.prod.out{opacity:0;transform:scale(.94)}
+.prod .ph{aspect-ratio:1;border-radius:16px}
+.prod .ph img,.cat .ph img,.hamp .ph img{filter:saturate(1.06) sepia(.1) contrast(1.02)}
+.pbadge{position:absolute;top:10px;left:10px;z-index:1;font-size:.7rem;font-weight:700;padding:5px 11px;border-radius:999px;background:var(--tur);color:var(--ink)}
+.pbadge.new{background:var(--leaf);color:#fff}
+.spice{position:absolute;top:10px;right:10px;z-index:1;font-size:.72rem;padding:4px 9px;border-radius:999px;background:rgba(255,253,248,.92);letter-spacing:-1px}
+.prod-b{display:grid;gap:4px;padding:2px 6px;text-align:center}
+.prod h3{font-size:1.15rem;letter-spacing:-0.02em}
+.prod .sub{font-size:.8rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.prod .price{font-weight:800;color:var(--chili);font-size:1.05rem;font-variant-numeric:tabular-nums}
+.prod .price small{font-weight:500;color:var(--muted);font-size:.74rem;margin-right:4px}
+.prod-f{display:grid;grid-template-columns:1fr auto auto;gap:6px;padding:4px 2px 2px}
+.prod-f .btn{height:40px;padding:0 12px;font-size:.82rem}
+.prod-f .mp{height:40px;width:40px;padding:0;justify-content:center}
+.empty{grid-column:1/-1;padding:40px;text-align:center;color:var(--muted)}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.grid{grid-template-columns:1fr}}
+
+/* hampers */
+.hampers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hamp{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-xl);overflow:hidden;display:flex;flex-direction:column;transition:transform .8s var(--glide),box-shadow .8s var(--glide)}
+.hamp:hover{transform:translateY(-8px);box-shadow:0 34px 56px -34px rgba(58,35,24,.55)}
+.hamp:hover .ph img{transform:scale(1.07)}
+.hamp .ph{aspect-ratio:16/11}
+.hamp-b{padding:22px;display:grid;gap:12px;flex:1;align-content:start}
+.hamp h3{font-size:1.5rem}
+.hamp ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.9rem;color:var(--muted)}
+.hamp li::before{content:"·";color:var(--chili);font-weight:800;margin-right:8px}
+.hamp-f{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 22px 22px;flex-wrap:wrap}
+.hamp-f b{font-size:1.3rem;font-weight:800;font-variant-numeric:tabular-nums}
+.hamp.feat{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.hamp.feat ul{color:rgba(255,253,248,.8)}
+.hamp.feat li::before{color:var(--tur)}
+.hamp-note{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background-color:var(--tur-soft);background-image:repeating-linear-gradient(45deg,rgba(91,52,32,.06) 0 6px,transparent 6px 12px),repeating-linear-gradient(-45deg,rgba(91,52,32,.06) 0 6px,transparent 6px 12px);border-radius:var(--r-lg);padding:18px 22px;font-weight:600}
+@media (max-width:900px){.hampers{grid-template-columns:1fr}}
+
+/* how to order */
+.how{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(28px,4vw,44px)}
+.how-img{position:relative}
+.how-img .ph{border-radius:var(--r-xl);aspect-ratio:4/5}
+.badge-c{position:absolute;right:-26px;top:-26px;width:128px;height:128px;border-radius:50%;background:var(--tur);color:var(--ink);display:grid;place-items:center;text-align:center;font-weight:800;font-size:.86rem;line-height:1.25;padding:16px;box-shadow:0 20px 40px -20px rgba(232,169,60,.9)}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1.5px solid var(--line)}
+.steps li:first-child{padding-top:4px}
+.steps .ic{width:56px;height:56px;border-radius:50%;background:var(--brown);color:var(--tur);display:grid;place-items:center;transition:transform .7s var(--glide),background .5s}
+.steps li:hover .ic{transform:rotate(-12deg) scale(1.06);background:var(--chili);color:#fff}
+.steps h3{font-size:1.25rem;margin-bottom:4px}
+.steps p{color:var(--muted);font-size:.94rem;max-width:52ch}
+@media (max-width:900px){.how{grid-template-columns:1fr}.how-img .ph{aspect-ratio:16/11}.badge-c{right:12px;top:-20px;width:110px;height:110px;font-size:.78rem}}
+
+/* forms */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.uses{display:grid;gap:12px;margin-top:8px}
+.use{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:16px;transition:transform .7s var(--glide),border-color .5s}
+.use:hover{transform:translateX(6px);border-color:var(--chili)}
+.use .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem}
+.use h4{font-family:var(--font);font-size:1rem;font-weight:700;letter-spacing:-0.01em}
+.use p{font-size:.86rem;color:var(--muted)}
+.card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-xl);padding:clamp(22px,3.4vw,38px);display:grid;gap:16px;color:var(--ink)}
+.card h3{font-size:1.6rem}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{display:grid;gap:6px;min-width:0}
+.fld.full{grid-column:1/-1}
+.fld label,.fld .lbl{font-size:.78rem;color:var(--muted);font-weight:700}
+.fld input,.fld select,.fld textarea{width:100%;min-width:0;background:var(--cream);border:1.5px solid transparent;border-radius:14px;padding:13px 15px;font-size:.95rem;transition:border-color .4s,background .4s}
+.fld textarea{min-height:90px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--ink);background:#fff}
+.ck{display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:14px;padding:13px 15px;font-size:.92rem;cursor:pointer}
+.ck input{width:18px;height:18px;accent-color:var(--chili)}
+.err{font-size:.86rem;color:var(--bad);background:var(--bad-bg);padding:10px 14px;border-radius:12px}
+.fine{font-size:.78rem;color:var(--muted)}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+@media (max-width:540px){.fgrid{grid-template-columns:1fr}}
+
+/* partner band */
+.pband{position:relative;background:var(--brown) var(--orn);border-top:0;color:var(--paper);border-radius:var(--r-xl);padding-block:clamp(56px,8vw,96px);overflow:hidden;isolation:isolate}
+.pband::after{content:"";position:absolute;right:-40px;bottom:-10px;width:clamp(180px,22vw,300px);aspect-ratio:1;z-index:-1;opacity:.12;background:currentColor;-webkit-mask:var(--gate) center/contain no-repeat;mask:var(--gate) center/contain no-repeat}
+.pband .eyebrow{color:var(--tur)}
+.pband .lede{color:rgba(255,253,248,.75)}
+.p-head{display:grid;gap:14px;max-width:660px;margin-bottom:28px}
+.ptabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.ptabs button{height:46px;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,253,248,.28);background:transparent;color:var(--paper);font-weight:600;font-size:.9rem;cursor:pointer;transition:background .5s var(--glide),color .5s,border-color .5s}
+.ptabs button[aria-selected="true"]{background:var(--tur);color:var(--ink);border-color:var(--tur)}
+.ppanel{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:16px;transition:opacity .35s var(--glide),transform .5s var(--glide)}
+.ppanel.swap{opacity:0;transform:translateY(14px)}
+.pinfo{background:rgba(255,253,248,.07);border:1.5px solid rgba(255,253,248,.14);border-radius:var(--r-lg);padding:clamp(22px,3vw,34px);display:grid;gap:18px;align-content:start}
+.pinfo h3{font-size:clamp(1.6rem,2.6vw,2.2rem)}
+.pinfo p{color:rgba(255,253,248,.8)}
+.pinfo ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.pinfo li{display:flex;gap:12px;font-size:.94rem}
+.pinfo li::before{content:"";width:20px;height:20px;flex:none;margin-top:2px;border-radius:50%;background:var(--tur) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.5 2.5L14 7.5' fill='none' stroke='%233A2318' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.tiers{width:100%;border-collapse:collapse;font-size:.9rem}
+.tiers th,.tiers td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(255,253,248,.16);font-variant-numeric:tabular-nums}
+.tiers th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,253,248,.6);font-weight:700}
+.tiers td b{color:var(--tur)}
+.pphoto{border-radius:var(--r-lg);min-height:260px}
+.pform{margin-top:16px}
+@media (max-width:900px){.ppanel{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:16px}
+.contact .map{grid-column:1/-1}
+.contact .map{border-radius:var(--r-xl);min-height:clamp(260px,32vw,380px);background-color:#EFE3CC;background-image:linear-gradient(rgba(91,52,32,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(91,52,32,.06) 1px,transparent 1px);background-size:32px 32px}
+.map-pin{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:10px;text-align:center;padding:20px}
+.map-pin .pin{width:56px;height:56px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--chili);display:grid;place-items:center;box-shadow:0 14px 26px -12px rgba(196,64,42,.8)}
+.map-pin .pin i{width:18px;height:18px;border-radius:50%;background:var(--paper);display:block}
+.map-pin b{font-family:var(--display);font-size:1.3rem}
+.contact .map iframe{z-index:1}
+.visit{background:var(--leaf);color:#fff;border-radius:var(--r-xl);padding:clamp(22px,3vw,32px);display:grid;gap:16px;align-content:start}
+.visit h3{font-size:1.6rem}
+.visit dl{margin:0;display:grid}
+.visit dl div{display:grid;gap:2px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:.9rem}
+.visit dt{opacity:.75;font-size:.78rem;font-weight:600}
+.visit dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums}
+.visit .sel{user-select:all}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+
+/* faq */
+.faq{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.faq > li{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:border-color .5s}
+.faq > li.open{border-color:var(--brown)}
+.faq button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 22px;background:none;border:0;cursor:pointer;text-align:left;font-size:1.04rem;font-weight:700}
+.faq .pm{width:34px;height:34px;flex:none;border-radius:50%;background:var(--sand);display:grid;place-items:center;transition:transform .7s var(--glide),background .5s,color .5s}
+.faq li.open .pm{transform:rotate(135deg);background:var(--chili);color:#fff}
+.fbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .8s var(--glide)}
+.faq li.open .fbody{grid-template-rows:1fr}
+.fbody > div{overflow:hidden}
+.fbody p{padding:0 22px 22px;color:var(--muted);opacity:0;transform:translateY(-8px);transition:opacity .5s var(--glide),transform .7s var(--glide)}
+.faq li.open .fbody p{opacity:1;transform:none;transition-delay:.12s}
+.faq-wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:900px){.faq-wrap{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--brown) var(--orn);color:var(--sand);margin-top:clamp(72px,9vw,120px);padding-block:clamp(48px,7vw,72px) calc(32px + env(safe-area-inset-bottom,0px));position:relative}
+.f-top{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(243,230,209,.18)}
+.f-top h2{font-size:clamp(1.8rem,3.6vw,2.8rem);max-width:18ch;color:var(--paper)}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1.3fr;gap:28px;padding-block:32px 28px;border-bottom:1px solid rgba(243,230,209,.18)}
+.foot p{color:rgba(243,230,209,.75);font-size:.9rem;max-width:34ch;margin-top:14px}
+.foot .logo{color:var(--paper)}.foot .logo small{color:rgba(243,230,209,.7)}
+.foot .logo .mk{background:var(--tur);color:var(--brown)}
+.foot h4{font-family:var(--font);font-size:.9rem;margin-bottom:12px;color:var(--paper)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.88rem;color:rgba(243,230,209,.75)}
+.foot button{background:none;border:0;padding:0;cursor:pointer;color:inherit;font:inherit;transition:color .3s;text-align:left}
+.foot button:hover{color:var(--paper)}
+.foot .sel{user-select:all;color:var(--paper);font-variant-numeric:tabular-nums}
+.copy{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.8rem;color:rgba(243,230,209,.6)}
+@media (max-width:860px){.foot{grid-template-columns:1fr 1fr}}
+.wa-fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 22px 0 16px;border-radius:999px;background:var(--wa);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 18px 36px -14px rgba(31,168,85,.7);transition:transform .6s var(--glide)}
+.wa-fab:hover{transform:translateY(-3px) scale(1.02)}
+
+/* product modal */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;background:rgba(58,35,24,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility 0s .5s}
+.modal.open{opacity:1;visibility:visible;transition:opacity .5s var(--ease)}
+.m-panel{position:relative;width:min(1040px,100%);max-height:calc(100dvh - 32px);overflow:auto;background:var(--paper);border-radius:var(--r-xl);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);transform:translateY(48px) scale(.94);opacity:0;transition:transform .9s var(--glide),opacity .5s var(--glide);overscroll-behavior:contain}
+.modal.open .m-panel{transform:none;opacity:1}
+.m-info > *{opacity:0;transform:translateY(16px);transition:opacity .6s var(--glide),transform .8s var(--glide)}
+.modal.open .m-info > *{opacity:1;transform:none;transition-delay:calc(160ms + var(--i,0) * 45ms)}
+.m-close{position:absolute;top:14px;right:14px;z-index:4}
+.m-img{margin:14px;border-radius:var(--r-lg);min-height:380px}
+.m-img img{transform:scale(1.1);transition:transform 1.6s var(--glide)}
+.modal.open .m-img img{transform:none}
+.m-info{padding:clamp(22px,3vw,36px) clamp(22px,3vw,36px) clamp(22px,3vw,36px) 10px;display:grid;gap:16px;align-content:start}
+.m-info h3{font-size:clamp(2rem,3.4vw,2.8rem)}
+.m-info .desc{color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.facts div{background:var(--cream);border-radius:12px;padding:10px 12px;display:grid}
+.facts span{font-size:.7rem;color:var(--muted);font-weight:600}
+.facts b{font-size:.9rem}
+.vars{display:flex;gap:8px;flex-wrap:wrap}
+.vars button{border:1.5px solid var(--line);background:var(--paper);border-radius:14px;padding:10px 14px;cursor:pointer;text-align:left;display:grid;transition:border-color .4s,background .4s,transform .5s var(--glide)}
+.vars button:hover{transform:translateY(-2px)}
+.vars button b{font-size:.9rem}
+.vars button span{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.vars button[aria-pressed="true"]{border-color:var(--brown);background:var(--sand)}
+.qty{display:inline-flex;align-items:center;gap:2px;background:var(--cream);border-radius:999px;padding:5px}
+.qty button{width:38px;height:38px;border-radius:50%;border:0;background:var(--paper);cursor:pointer;font-weight:700;display:grid;place-items:center}
+.qty span{min-width:34px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.m-buy{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.m-buy .btn{flex:1}
+.m-mp{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+@media (max-width:860px){.m-panel{grid-template-columns:1fr}.m-img{min-height:280px}.m-info{padding:6px 22px 24px}}
+/* hover polish: every interactive thing eases instead of snapping */
+a,button,select,input,textarea{transition:color .5s var(--glide),background-color .5s var(--glide),border-color .5s var(--glide),box-shadow .6s var(--glide),transform .6s var(--glide),opacity .5s var(--glide)}
+.btn:active,.round:active,.chips button:active{transform:scale(.96)!important;transition-duration:.15s}
+.nav button{position:relative}
+.nav button::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;border-radius:2px;background:var(--chili);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--glide)}
+.nav button:hover::after{transform:scaleX(1)}
+.logo .mk{transition:transform .9s var(--glide)}
+.logo:hover .mk{transform:rotate(-14deg) scale(1.06)}
+.stat{transition:transform .8s var(--glide),box-shadow .8s var(--glide)}
+.stat:hover{transform:translateY(-6px);box-shadow:0 26px 44px -30px rgba(58,35,24,.6)}
+.checks li{transition:transform .6s var(--glide)}
+.checks li:hover{transform:translateX(6px)}
+.ch-list b{display:inline-block;transition:opacity .5s var(--glide),transform .7s var(--glide),color .5s}
+.ch-list b:hover{transform:translateY(-4px);color:var(--chili)}
+.how-img .ph img,.pphoto img{transition:transform 1.8s var(--glide)}
+.how-img:hover .ph img,.pphoto:hover img{transform:scale(1.06)}
+.badge-c{transition:transform 1s var(--glide)}
+.how-img:hover .badge-c{transform:rotate(-12deg) scale(1.06)}
+.steps li{transition:background-color .6s var(--glide),padding .6s var(--glide);border-radius:16px}
+.steps li:hover{background:var(--paper);padding-inline:14px}
+.faq > li{transition:border-color .6s var(--glide),box-shadow .7s var(--glide),transform .7s var(--glide)}
+.faq > li:hover{transform:translateY(-3px);box-shadow:0 20px 36px -28px rgba(58,35,24,.6)}
+.faq button{transition:background-color .5s var(--glide),color .5s}
+.faq button:hover{background:var(--cream)}
+.faq button:hover .pm{transform:rotate(90deg)}
+.faq li.open button:hover .pm{transform:rotate(135deg)}
+.pinfo li{transition:transform .6s var(--glide)}
+.pinfo li:hover{transform:translateX(6px)}
+.visit dl div{transition:padding .6s var(--glide)}
+.visit dl div:hover{padding-left:8px}
+.fld input:hover,.fld select:hover,.fld textarea:hover{border-color:var(--line)}
+#kForm{background-color:var(--paper);background-image:repeating-linear-gradient(45deg,rgba(91,52,32,.035) 0 6px,transparent 6px 12px),repeating-linear-gradient(-45deg,rgba(91,52,32,.035) 0 6px,transparent 6px 12px)}
+#kForm .chips button{height:40px;padding:0 16px;font-size:.84rem}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ar" viewBox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-al" viewBox="0 0 18 18"><path d="M15 9H3M8 4L3 9l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ne" viewBox="0 0 18 18"><path d="M5 13L13 5M6.5 5H13v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 18 18"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 18 18"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 9.5c.5 2.6 2.4 4.6 5 5.4l1.2-1.3 2 .9-.4 1.6c-3.8.3-8.1-3.6-8.2-7.6l1.6-.6.9 2z" fill="currentColor"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 32 32"><path d="M16 4c3 4 3 7 0 10-3-3-3-6 0-10z" fill="currentColor"/><path d="M6 16h20a10 10 0 0 1-20 0z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M10 27h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-gate" viewBox="0 0 120 120"><path fill="currentColor" d="M8 112h44V96h-4V84h-4V72h-4V60h-4V48h-4V36h-4V24h-4V12h-4v12h-4v12H8zM112 112H68V96h4V84h4V72h4V60h4V48h4V36h4V24h4V12h4v12h4v12h4z"/></symbol>
+  <symbol id="f-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14zM5 19l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="f-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="f-chili" viewBox="0 0 24 24"><path d="M7 7c3-1 6 0 8 3 2 4 1 8-3 10-3 1-7 0-8-2 4 0 6-2 6-5S9 9 7 7zM7 7c0-2 1-3 3-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="f-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="f-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="f-gift" viewBox="0 0 24 24"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-3-5 0M12 7c2-4 6-3 5 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="u-ring" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 4h6l-3 5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="u-office" viewBox="0 0 24 24"><path d="M4 21V5l9-2v18M13 9h7v12M8 8h1M8 12h1M8 16h1M16 13h1M16 17h1M2 21h20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="u-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 11h16M7 21v-3M17 21v-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="14.5" r="1" fill="currentColor"/><circle cx="16" cy="14.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="s-tap" viewBox="0 0 24 24"><path d="M9 11V5a2 2 0 0 1 4 0v6l4 1a2 2 0 0 1 1.5 2.3L17.5 20H9l-3.5-5a1.5 1.5 0 0 1 2.3-1.9L9 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="s-pay" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M7 15h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="s-box" viewBox="0 0 24 24"><path d="M3 8l9-4 9 4v9l-9 4-9-4zM3 8l9 4 9-4M12 12v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</svg>
+<style>:root{--gate:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M8 112h44V96h-4V84h-4V72h-4V60h-4V48h-4V36h-4V24h-4V12h-4v12h-4v12H8zM112 112H68V96h4V84h4V72h4V60h4V48h4V36h4V24h4V12h4v12h4v12h4z'/%3E%3C/svg%3E")}</style>
+
+<div class="announce" aria-live="off"><div class="ann-track" id="ann"></div></div>
+<div class="janur brown" aria-hidden="true" style="position:relative;z-index:61"></div>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <div class="hdr-in">
+      <button class="logo" type="button" data-go="top"><span class="mk"><svg width="26" height="26"><use href="#i-logo"/></svg></span><span><b>Dapur Meme</b><small>OLEH-OLEH BALI · 1998</small></span></button>
+      <nav class="nav" aria-label="Main">
+        <button type="button" data-go="about" data-i18n="nav_about">Tentang kami</button>
+        <button type="button" data-go="range" data-i18n="nav_shop">Produk</button>
+        <button type="button" data-go="hampers" data-i18n="nav_hamp">Hampers</button>
+        <button type="button" data-go="order" data-i18n="nav_how">Cara pesan</button>
+        <button type="button" data-go="partner" data-i18n="nav_partner">Kemitraan</button>
+        <button type="button" data-go="contact" data-i18n="nav_contact">Kontak</button>
+      </nav>
+      <div class="hdr-r">
+        <div class="seg" role="group" aria-label="Language" id="langSeg"><span class="knob"></span><button type="button" data-lang="id">ID</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="zh">中文</button></div>
+        <a class="btn sm wa wa-link" href="#" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-chat"/></svg><span data-i18n="cta_wa">Chat WhatsApp</span></a>
+        <button class="round menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 6h14M2 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+    <div class="mnav" id="mobileNav" hidden>
+      <button type="button" data-go="about" data-i18n="nav_about">Tentang kami</button>
+      <button type="button" data-go="range" data-i18n="nav_shop">Produk</button>
+      <button type="button" data-go="hampers" data-i18n="nav_hamp">Hampers</button>
+      <button type="button" data-go="order" data-i18n="nav_how">Cara pesan</button>
+      <button type="button" data-go="partner" data-i18n="nav_partner">Kemitraan</button>
+      <button type="button" data-go="contact" data-i18n="nav_contact">Kontak</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap">
+  <div class="hero" id="hero">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1558005530-a7958896ec60?auto=format&fit=crop&w=2200&q=80" alt="Sawah terasering Bali di pagi hari" fetchpriority="high"></div>
+    <svg class="gate" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-gate"/></svg>
+    <div class="hero-c">
+      <span class="eyebrow" data-i18n="hero_eye">Rahajeng rauh · oleh-oleh khas Bali sejak 1998</span>
+      <h1 data-i18n-html="hero_title">Rasa Bali dari dapur <em>Meme</em>, untuk dibawa pulang.</h1>
+      <p data-i18n="hero_sub">Keripik, sambal, jajanan, dan kopi Bali buatan tangan dari resep keluarga. Tanpa pengawet dan dikirim ke seluruh Indonesia.</p>
+      <div class="cta">
+        <button class="btn tur" type="button" data-go="range"><span data-i18n="hero_cta1">Lihat produk</span><svg class="mv" width="18" height="18"><use href="#i-ar"/></svg></button>
+        <button class="btn line" type="button" data-go="partner" data-i18n="hero_cta2">Jadi mitra</button>
+      </div>
+    </div>
+    <div class="pols">
+      <button type="button" class="pol p1" data-open="piesusu"><div class="ph"><img src="https://images.unsplash.com/photo-1551978027-76ccba5cf302?auto=format&fit=crop&w=600&q=80" alt=""></div><b>Pie Susu Bali</b><small data-i18n="pol1">Terlaris · dipanggang tiap pagi</small></button>
+      <button type="button" class="pol p2" data-open="matah"><div class="ph"><img src="https://images.unsplash.com/photo-1554478299-725a76d9badc?auto=format&fit=crop&w=600&q=80" alt=""></div><b>Sambal Matah</b><small data-i18n="pol2">Pedas 🌶🌶🌶🌶 · diiris segar</small></button>
+    </div>
+  </div>
+  <div class="promise rv-s">
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-leaf"/></svg></span><b data-i18n="ft1">Tanpa pengawet</b><small data-i18n="fs1">Bahan alami saja</small></div>
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-home"/></svg></span><b data-i18n="ft2">Resep keluarga</b><small data-i18n="fs2">Sejak 1998</small></div>
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-chili"/></svg></span><b data-i18n="ft3">Bahan lokal Bali</b><small data-i18n="fs3">Bedugul, Kintamani, Tabanan</small></div>
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-shield"/></svg></span><b data-i18n="ft4">PIRT & halal</b><small data-i18n="fs4">Aman dan resmi</small></div>
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-gift"/></svg></span><b data-i18n="ft5">Kemasan oleh-oleh</b><small data-i18n="fs5">Rapi dan aman di pesawat</small></div>
+    <div class="pr"><span class="ic"><svg width="24" height="24"><use href="#f-truck"/></svg></span><b data-i18n="ft6">Kirim seluruh Indonesia</b><small data-i18n="fs6">Hari yang sama</small></div>
+  </div>
+</section>
+
+<section class="section wrap" id="about">
+  <div class="about">
+    <div class="about-l rv">
+      <span class="eyebrow" data-i18n="a_eye">Tentang kami</span>
+      <h2 class="h2" data-i18n-html="a_title">Kenapa harus <span class="hl">Dapur Meme?</span></h2>
+      <p class="lede" data-i18n="a_p">Berawal dari dapur kecil di Denpasar tahun 1998, Meme Sari membuat pie susu untuk tetangga yang mau pulang kampung. Kini kami dijalankan tiga generasi bersama 14 ibu dari banjar sekitar, tetap dengan cabai dari Bedugul, kopi dari Kintamani, dan kacang dari Tabanan.</p>
+      <ul class="checks"><li data-i18n="ck1">Tanpa pengawet & pewarna</li><li data-i18n="ck2">Dibuat tangan setiap hari</li><li data-i18n="ck3">Bahan dari petani Bali</li><li data-i18n="ck4">Higienis, izin PIRT</li><li data-i18n="ck5">Rasa otentik Bali</li><li data-i18n="ck6">Dikirim hari yang sama</li></ul>
+    </div>
+    <div class="stats rv-s" id="stats">
+      <div class="stat"><b data-count="27">0</b><span data-i18n="sa1">tahun di dapur</span></div>
+      <div class="stat"><b data-count="2000" data-suffix="+">0</b><span data-i18n="sa2">kotak terjual per bulan</span></div>
+      <div class="stat"><b data-count="120" data-suffix="+">0</b><span data-i18n="sa3">mitra & reseller</span></div>
+      <div class="stat"><b data-count="12">0</b><span data-i18n="sa4">produk khas Bali</span></div>
+    </div>
+  </div>
+  <div class="channels rv"><span data-i18n="ch_t">Juga tersedia di</span><div class="ch-list"><b>Shopee</b><b>Tokopedia</b><b>TikTok Shop</b><b>GoFood</b><b>GrabFood</b><b>Lazada</b></div></div>
+</section>
+
+<section class="wrap" id="origins" style="margin-bottom:clamp(72px,9vw,120px)">
+  <div class="batik">
+    <div class="og-head rv"><div><span class="eyebrow" data-i18n="og_eye">Dari tanah Bali</span><h2 class="h2" data-i18n-html="og_title">Setiap rasa punya <span class="hl">kampung halaman</span></h2><p class="lede" data-i18n="og_sub">Kami membeli langsung dari petani dan pasar di seluruh Bali.</p></div></div>
+    <div class="origins rv-s">
+      <div class="og"><div class="ph"><img src="https://images.unsplash.com/photo-1776722203710-c20658816c2f?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"></div><div class="ob"><span class="reg">Bedugul · Tabanan</span><h3 data-i18n="og1t">Cabai & bawang</h3><p><span data-i18n="og1p"></span></p></div></div>
+      <div class="og"><div class="ph"><img src="https://images.unsplash.com/photo-1642613630414-1d9938f4fe02?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"></div><div class="ob"><span class="reg">Kintamani · Bangli</span><h3 data-i18n="og2t">Kopi arabika</h3><p><span data-i18n="og2p"></span></p></div></div>
+      <div class="og"><div class="ph"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"></div><div class="ob"><span class="reg">Tabanan · Gianyar</span><h3 data-i18n="og3t">Kacang & kelapa</h3><p><span data-i18n="og3p"></span></p></div></div>
+      <div class="og"><div class="ph"><img src="https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy"></div><div class="ob"><span class="reg">Denpasar</span><h3 data-i18n="og4t">Dapur Meme</h3><p><span data-i18n="og4p"></span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="cats-sec">
+  <div class="catrow">
+    <div class="cat-side rv">
+      <span class="eyebrow" data-i18n="c_eye">Kategori</span>
+      <h2 class="h2" data-i18n-html="c_title">Pilihan <span class="hl">oleh-oleh</span></h2>
+      <p class="lede" data-i18n="c_sub">Dari yang renyah, pedas, sampai manis. Pilih kategori untuk melihat produknya.</p>
+    </div>
+    <div class="rv">
+      <div class="carousel" id="carousel"></div>
+      <div class="car-ctl"><button class="round" type="button" id="cPrev" aria-label="Previous"><svg width="18" height="18"><use href="#i-al"/></svg></button><button class="round dark" type="button" id="cNext" aria-label="Next"><svg width="18" height="18"><use href="#i-ar"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="range">
+  <div class="range rv">
+    <div class="range-head">
+      <div><span class="eyebrow" data-i18n="s_eye">Produk kami</span><h2 class="h2" data-i18n-html="s_title">Pesan <span class="hl">langsung</span> atau lewat marketplace</h2><p class="lede" data-i18n="s_sub">Klik produk untuk melihat varian dan daya tahan. Tombol WhatsApp langsung mengirim pesanan Anda.</p></div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="wrap" id="hampers">
+  <div style="display:grid;gap:14px;max-width:660px;margin-bottom:32px" class="rv"><span class="eyebrow" data-i18n="h_eye">Hampers</span><h2 class="h2" data-i18n-html="h_title">Kado manis <span class="hl">untuk orang tersayang</span></h2><p class="lede" data-i18n="h_sub">Dikemas dalam kotak anyaman ata dengan kartu ucapan tulisan tangan. Bisa dikirim langsung ke penerima.</p></div>
+  <div class="hampers rv-s" id="hampGrid"></div>
+  <div class="hamp-note rv"><span data-i18n="h_note">Butuh isi atau jumlah berbeda, atau logo perusahaan di kemasan?</span><button class="btn sm" type="button" data-contact="custom"><span data-i18n="h_note_btn">Buat hampers custom</span><svg class="mv" width="16" height="16"><use href="#i-ar"/></svg></button></div>
+</section>
+
+<section class="section wrap" id="order">
+  <div style="display:grid;gap:14px;max-width:660px" class="rv"><span class="eyebrow" data-i18n="o_eye">Cara pesan</span><h2 class="h2" data-i18n-html="o_title">Pesan semudah <span class="hl">kirim chat</span></h2><p class="lede" data-i18n="o_sub">Tanpa daftar akun, tanpa ribet. Admin kami membalas dalam 15 menit pada jam buka.</p></div>
+  <div class="how">
+    <div class="how-img rv"><div class="ph"><img src="https://images.unsplash.com/photo-1588467850695-a898367ce465?auto=format&fit=crop&w=1100&q=80" alt="Bahan kue di dapur" loading="lazy"></div><div class="badge-c" data-i18n="o_badge">Pesan sebelum 14.00, kirim hari ini</div></div>
+    <ol class="steps rv-s">
+      <li><span class="ic"><svg width="24" height="24"><use href="#s-tap"/></svg></span><div><h3 data-i18n="s1t">Pilih produk</h3><p data-i18n="s1p">Pilih varian dan jumlah di halaman produk, lalu tekan tombol WhatsApp.</p></div></li>
+      <li><span class="ic"><svg width="24" height="24"><use href="#i-chat"/></svg></span><div><h3 data-i18n="s2t">Kirim pesan otomatis</h3><p data-i18n="s2p">Pesanan Anda sudah tertulis rapi. Tinggal tambahkan nama dan alamat pengiriman.</p></div></li>
+      <li><span class="ic"><svg width="24" height="24"><use href="#s-pay"/></svg></span><div><h3 data-i18n="s3t">Konfirmasi & bayar</h3><p data-i18n="s3p">Admin mengirim total dan ongkir. Bayar lewat transfer bank atau QRIS.</p></div></li>
+      <li><span class="ic"><svg width="24" height="24"><use href="#s-box"/></svg></span><div><h3 data-i18n="s4t">Dikemas dengan rapi</h3><p data-i18n="s4p">Produk dikemas aman dengan bubble wrap dan kotak tebal, cocok untuk dibawa naik pesawat.</p></div></li>
+      <li><span class="ic"><svg width="24" height="24"><use href="#f-truck"/></svg></span><div><h3 data-i18n="s5t">Dikirim atau diambil</h3><p data-i18n="s5p">Kurir kami untuk Denpasar dan Badung, ekspedisi untuk luar Bali, atau ambil langsung di toko.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section wrap" id="partner">
+  <div class="pband">
+    <div class="janur" aria-hidden="true" style="position:absolute;left:0;right:0;top:0;opacity:.9"></div>
+    <div class="wrap">
+      <div class="p-head rv"><span class="eyebrow" data-i18n="p_eye">Kemitraan</span><h2 class="h2" data-i18n-html="p_title">Jadi mitra <span class="hl3">Dapur Meme</span></h2><p class="lede" data-i18n="p_sub">Sudah lebih dari 120 toko, hotel, dan reseller menjual produk kami. Pilih jalur yang cocok untuk usaha Anda.</p></div>
+      <div class="ptabs rv" role="tablist" id="ptabs"></div>
+      <div class="ppanel rv" id="ppanel"></div>
+      <div class="rv" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,253,248,.16)">
+        <span style="color:rgba(255,253,248,.8)" data-i18n="p_cta_t">Tertarik? Isi form singkat di bawah dan tim kami menghubungi Anda.</span>
+        <button class="btn tur" type="button" data-contact="partner"><span data-i18n="p_cta">Daftar jadi mitra</span><svg class="mv" width="18" height="18"><use href="#i-ar"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="faq-sec">
+  <div class="faq-wrap">
+    <div class="rv" style="display:grid;gap:14px"><span class="eyebrow">FAQ</span><h2 class="h2" data-i18n-html="q_title">Yang sering <span class="hl">ditanyakan</span></h2><p class="lede" data-i18n="q_sub">Belum ketemu jawabannya? Tanya langsung lewat WhatsApp.</p></div>
+    <ul class="faq rv" id="faq"></ul>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div style="display:grid;gap:14px;max-width:660px;margin-bottom:32px" class="rv"><span class="eyebrow" data-i18n="k_eye">Kontak</span><h2 class="h2" data-i18n-html="k_title">Mampir ke toko, <span class="hl">cicipi dulu</span></h2></div>
+  <div class="contact rv">
+    <div class="ph map"><div class="map-pin"><span class="pin"><i></i></span><b>Dapur Meme</b><span class="fine">Jl. Teuku Umar, Denpasar, Bali</span></div><iframe src="https://www.google.com/maps?q=Jl.%20Teuku%20Umar%2C%20Denpasar%2C%20Bali&output=embed" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <form class="card" id="kForm" novalidate>
+      <h3 data-i18n="kf_t">Kirim pesan lewat WhatsApp</h3>
+      <p class="fine" style="margin-top:-8px" data-i18n="kf_sub">Satu form untuk semua: pesanan, hampers & acara, atau kemitraan.</p>
+      <div class="fgrid">
+        <div class="fld full"><span class="lbl" data-i18n="kf_topic">Keperluan</span><div class="chips" id="kTopics" style="margin:0"></div></div>
+        <div class="fld"><label for="kName" data-i18n="f_name">Nama</label><input type="text" id="kName" autocomplete="name"></div>
+        <div class="fld"><label for="kCity" data-i18n="kf_city">Kota</label><input type="text" id="kCity" autocomplete="address-level2"></div>
+        <div class="fld full"><label for="kMsg" data-i18n="kf_msg">Pesan</label><textarea id="kMsg"></textarea></div>
+      </div>
+      <div class="err" id="kErr" hidden></div>
+      <button class="btn wa full" type="submit"><svg width="18" height="18"><use href="#i-chat"/></svg><span data-i18n="send_wa">Kirim via WhatsApp</span></button>
+    </form>
+    <div class="visit">
+      <h3 data-i18n="v_t">Toko & dapur</h3>
+      <dl>
+        <div><dt data-i18n="v_addr">Alamat</dt><dd>Jl. Teuku Umar, Denpasar, Bali</dd></div>
+        <div><dt data-i18n="v_h1">Senin – Sabtu</dt><dd>08.00 – 20.00</dd></div>
+        <div><dt data-i18n="v_h2">Minggu</dt><dd>09.00 – 17.00</dd></div>
+        <div><dt>WhatsApp</dt><dd class="sel">+62 812 0000 0000</dd></div>
+        <div><dt>Email</dt><dd class="sel">halo@dapurmeme.example</dd></div>
+      </dl>
+      <a class="btn light sm" href="https://www.google.com/maps/search/?api=1&query=Jl.%20Teuku%20Umar%20Denpasar" target="_blank" rel="noopener"><span data-i18n="v_map">Petunjuk arah</span><svg width="16" height="16"><use href="#i-ne"/></svg></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="janur flip brown" aria-hidden="true" style="margin-top:clamp(72px,9vw,120px)"></div>
+<footer style="margin-top:0">
+  <div class="wrap">
+    <div class="f-top"><h2 data-i18n="f_title">Matur suksma sudah mampir. Sampai jumpa di Bali!</h2><a class="btn tur wa-link" href="#" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-chat"/></svg><span data-i18n="f_join">Gabung saluran promo WhatsApp</span></a></div>
+    <div class="foot">
+      <div><span class="logo"><span class="mk"><svg width="26" height="26"><use href="#i-logo"/></svg></span><span><b>Dapur Meme</b><small>OLEH-OLEH BALI · 1998</small></span></span><p data-i18n="ft_p">Oleh-oleh khas Bali buatan tangan sejak 1998. Pesan lewat WhatsApp, kirim ke seluruh Indonesia.</p></div>
+      <div><h4 data-i18n="ft_shop">Belanja</h4><ul><li><button type="button" data-go="range" data-i18n="nav_shop">Produk</button></li><li><button type="button" data-go="hampers" data-i18n="nav_hamp">Hampers</button></li><li><button type="button" data-contact="custom" data-i18n="nav_custom">Pesanan khusus</button></li></ul></div>
+      <div><h4 data-i18n="ft_co">Perusahaan</h4><ul><li><button type="button" data-go="about" data-i18n="nav_about">Tentang kami</button></li><li><button type="button" data-go="partner" data-i18n="nav_partner">Kemitraan</button></li><li><button type="button" data-go="faq-sec">FAQ</button></li></ul></div>
+      <div><h4 data-i18n="ft_ct">Kontak</h4><ul><li>WhatsApp <span class="sel">+62 812 0000 0000</span></li><li>Email <span class="sel">halo@dapurmeme.example</span></li><li>Jl. Teuku Umar, Denpasar</li></ul></div>
+    </div>
+    <div class="copy"><span>© Dapur Meme Bali</span><span data-i18n="ft_demo">Website demo. Foto dari Unsplash; nomor izin, alamat, dan angka hanya contoh.</span></div>
+  </div>
+</footer>
+
+<a class="wa-fab wa-link" href="#" target="_blank" rel="noopener"><svg width="24" height="24"><use href="#i-chat"/></svg><span data-i18n="fab">Pesan via WhatsApp</span></a>
+
+<div class="modal" id="pModal" role="dialog" aria-modal="true" aria-labelledby="mName" data-lenis-prevent>
+  <div class="m-panel">
+    <button class="round m-close" type="button" data-close aria-label="Close"><svg width="18" height="18"><use href="#i-x"/></svg></button>
+    <div class="ph m-img" id="mImg"></div>
+    <div class="m-info">
+      <span class="eyebrow" id="mCat"></span>
+      <h3 id="mName"></h3>
+      <p class="desc" id="mDesc"></p>
+      <div class="facts" id="mFacts"></div>
+      <div class="fld"><span class="lbl" data-i18n="m_var">Pilih varian</span><div class="vars" id="mVars"></div></div>
+      <div class="m-buy"><div class="qty"><button type="button" id="mMinus" aria-label="-">−</button><span id="mQty">1</span><button type="button" id="mPlus" aria-label="+">+</button></div><a class="btn wa" id="mWa" href="#" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-chat"/></svg><span id="mWaTxt"></span></a></div>
+      <div class="m-mp"><span class="fine" data-i18n="m_or">atau beli di</span><a class="mp" id="mShopee" href="#" target="_blank" rel="noopener"><i style="background:#EE4D2D"></i>Shopee</a><a class="mp" id="mTokped" href="#" target="_blank" rel="noopener"><i style="background:#03AC0E"></i>Tokopedia</a></div>
+      <p class="fine" data-i18n="m_fine">Pesanan sebelum pukul 14.00 dikirim di hari yang sama.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+"use strict";
+document.documentElement.classList.add("js");
+const WA="6281200000000";
+const U=(id,w)=>"https://images.unsplash.com/photo-"+id+"?auto=format&fit=crop&w="+(w||900)+"&q=80";
+const CATS=[{k:"keripik",img:"1701341404788-b85484ca379e"},{k:"sambal",img:"1554478299-725a76d9badc"},{k:"jajanan",img:"1551978027-76ccba5cf302"},{k:"kopi",img:"1743356629215-abb470447e71"},{k:"hampers",img:"1578704694513-08946e996642"}];
+const P=[
+ {id:"piesusu",cat:"jajanan",name:"Pie Susu Bali",img:"1551978027-76ccba5cf302",badge:"best",life:7,wt:"15 g/pcs",v:[["v_ori10",35000],["v_ori25",80000],["v_cok10",38000]]},
+ {id:"disko",cat:"keripik",name:"Kacang Disko",img:"1549978113-29eb25c8177f",badge:"best",life:60,wt:"250 / 500 g",v:[["g250",28000],["g500",52000]]},
+ {id:"matah",cat:"sambal",name:"Sambal Matah",img:"1554478299-725a76d9badc",badge:"best",spice:4,life:14,wt:"150 / 250 ml",v:[["ml150",35000],["ml250",55000]]},
+ {id:"singkong",cat:"keripik",name:"Keripik Singkong Balado",img:"1701341404788-b85484ca379e",spice:3,life:60,wt:"200 / 400 g",v:[["g200",22000],["g400",40000]]},
+ {id:"robusta",cat:"kopi",name:"Kopi Bali Robusta",img:"1743356629215-abb470447e71",life:180,wt:"200 / 500 g",v:[["g200",45000],["g500",100000]]},
+ {id:"pisang",cat:"keripik",name:"Keripik Pisang Manis",img:"1749281592570-2f743d7d2824",life:60,wt:"200 / 400 g",v:[["g200",25000],["g400",45000]]},
+ {id:"embe",cat:"sambal",name:"Sambal Embe",img:"1757577244288-5ef1ec654d6c",spice:3,life:30,wt:"150 ml",v:[["ml150",32000]]},
+ {id:"pia",cat:"jajanan",name:"Pia Kacang Hijau",img:"1517093602195-b40af9688b46",life:7,wt:"10 pcs",v:[["isi10",40000]]},
+ {id:"terasi",cat:"sambal",name:"Sambal Terasi Bali",img:"1615110250484-e8c3b151b957",spice:5,life:60,wt:"150 ml",v:[["ml150",30000]]},
+ {id:"kintamani",cat:"kopi",name:"Arabika Kintamani",img:"1561986810-4f3ba2f46ceb",badge:"new",life:180,wt:"200 g",v:[["g200b",85000]]},
+ {id:"kuekacang",cat:"jajanan",name:"Kue Kacang",img:"1627662168223-7df99068099a",badge:"new",life:30,wt:"250 g",v:[["g250",45000]]},
+ {id:"peyek",cat:"keripik",name:"Rempeyek Kacang",img:"1690983318341-598b223c6560",life:30,wt:"150 g",v:[["g150",20000]]}
+];
+const H=[{id:"hmini",img:"1453834190665-46ff0a1fbd5a",price:175000,items:["hi_pie10","hi_disko","hi_matah","hi_kopi"]},
+ {id:"hkel",img:"1578704694513-08946e996642",price:325000,feat:true,items:["hi_pie25","hi_disko5","hi_singkong","hi_matah","hi_pisang","hi_kopi"]},
+ {id:"histi",img:"1544377208-215a63786183",price:550000,items:["hi_pie25","hi_pia","hi_disko5","hi_matah","hi_embe","hi_kintamani","hi_kue","hi_basket"]}];
+const PART=[{k:"res",img:"1749281592570-2f743d7d2824"},{k:"toko",img:"1688217170693-e821c6e18d72"},{k:"hotel",img:"1578704694513-08946e996642"},{k:"cafe",img:"1511537190424-bbbab87ac5eb"}];
+
+const I18N={
+id:{pol1:"Terlaris · dipanggang tiap pagi",pol2:"Pedas 🌶🌶🌶🌶 · diiris segar",fs1:"Bahan alami saja",fs2:"Sejak 1998",fs3:"Bedugul, Kintamani, Tabanan",fs4:"Aman dan resmi",fs5:"Rapi dan aman di pesawat",fs6:"Hari yang sama",og_eye:"Dari tanah Bali",og_title:'Setiap rasa punya <span class="hl">kampung halaman</span>',og_sub:"Kami membeli langsung dari petani dan pasar di seluruh Bali. Arahkan kursor ke kartu untuk ceritanya.",og1t:"Cabai & bawang",og1p:"Cabai rawit dan bawang merah dari dataran tinggi yang sejuk, untuk sambal matah dan embe.",og2t:"Kopi arabika",og2p:"Dipetik dari kebun di lereng Gunung Batur, dikelola dengan sistem subak abian.",og3t:"Kacang & kelapa",og3p:"Kacang tanah dan kelapa dari desa di sekitar sawah, untuk kacang disko dan rempeyek.",og4t:"Dapur Meme",og4p:"Semuanya dimasak dan dikemas tangan oleh 14 ibu dari banjar di sekitar dapur kami.",p_cta_t:"Tertarik? Isi form singkat di bagian akhir halaman dan tim kami menghubungi Anda.",p_cta:"Daftar jadi mitra",kf_sub:"Satu form untuk semua: pesanan, hampers & acara, atau kemitraan.",kf_city:"Kota",tp_order:"Pesan produk",tp_custom:"Hampers & acara",tp_partner:"Kemitraan",tp_other:"Lainnya",kph_order:"Produk, jumlah, dan alamat pengiriman",kph_custom:"Jenis acara, jumlah paket, tanggal, dan budget per paket",kph_partner:"Nama usaha, jenis usaha, dan perkiraan order per bulan",kph_other:"Tulis pertanyaan Anda",nav_about:"Tentang kami",nav_shop:"Produk",nav_hamp:"Hampers",nav_how:"Cara pesan",nav_partner:"Kemitraan",nav_contact:"Kontak",nav_custom:"Pesanan khusus",cta_wa:"Chat WhatsApp",fab:"Pesan via WhatsApp",
+ann:["Gratis ongkir Denpasar & Badung min. Rp 150.000","Pesan sebelum 14.00, kirim hari ini","Terima pesanan hampers & suvenir","Buka kemitraan reseller & toko oleh-oleh"],
+hero_eye:"Rahajeng rauh · oleh-oleh khas Bali sejak 1998",hero_title:'Rasa Bali dari dapur <em>Meme</em>, untuk dibawa pulang.',hero_sub:"Keripik, sambal, jajanan, dan kopi Bali buatan tangan dari resep keluarga. Tanpa pengawet dan dikirim ke seluruh Indonesia.",hero_cta1:"Lihat produk",hero_cta2:"Jadi mitra",hc_t:"Pesan lewat WhatsApp, atau beli di",
+ft1:"Tanpa pengawet",ft2:"Resep keluarga",ft3:"Bahan lokal Bali",ft4:"PIRT & halal",ft5:"Kemasan rapi untuk oleh-oleh",ft6:"Kirim seluruh Indonesia",
+a_eye:"Tentang kami",a_title:'Kenapa harus <span class="hl">Dapur Meme?</span>',a_p:"Berawal dari dapur kecil di Denpasar tahun 1998, Meme Sari membuat pie susu untuk tetangga yang mau pulang kampung. Kini kami dijalankan tiga generasi bersama 14 ibu dari banjar sekitar, tetap dengan cabai dari Bedugul, kopi dari Kintamani, dan kacang dari Tabanan.",
+ck1:"Tanpa pengawet & pewarna",ck2:"Dibuat tangan setiap hari",ck3:"Bahan dari petani Bali",ck4:"Higienis, izin PIRT",ck5:"Rasa otentik Bali",ck6:"Dikirim hari yang sama",
+sa1:"tahun di dapur",sa2:"kotak terjual per bulan",sa3:"mitra & reseller",sa4:"produk khas Bali",ch_t:"Juga tersedia di",
+c_eye:"Kategori",c_title:'Pilihan <span class="hl">oleh-oleh</span>',c_sub:"Dari yang renyah, pedas, sampai manis. Pilih kategori untuk melihat produknya.",
+cat_all:"Semua",cat_keripik:"Keripik & kacang",cat_sambal:"Sambal Bali",cat_jajanan:"Jajanan & kue",cat_kopi:"Kopi Bali",cat_hampers:"Hampers",n_items:"{n} produk",n_hamp:"3 paket",
+s_eye:"Produk kami",s_title:'Pesan <span class="hl">langsung</span> atau lewat marketplace',s_sub:"Klik produk untuk melihat varian dan daya tahan. Tombol WhatsApp langsung mengirim pesanan Anda.",
+b_best:"Terlaris",b_new:"Baru",from:"mulai",order:"Pesan",details:"Detail",empty:"Belum ada produk di kategori ini.",
+d_piesusu:"Kulit renyah dan isian susu yang lembut, dipanggang setiap pagi. Oleh-oleh Bali paling dicari.",
+d_disko:"Kacang tanah Tabanan berbalut adonan tepung bumbu bawang, digoreng sampai renyah dan gurih.",
+d_matah:"Bawang merah, serai, cabai rawit, dan minyak kelapa, diiris segar. Simpan di kulkas setelah dibuka.",
+d_singkong:"Singkong diiris tipis dengan bumbu balado pedas manis. Renyah sampai gigitan terakhir.",
+d_pisang:"Pisang kepok pilihan, digoreng tipis dan diberi gula aren. Manisnya pas, disukai anak-anak.",
+d_embe:"Sambal khas Bali dengan bawang merah goreng dan cabai. Gurih dan harum, cocok untuk nasi hangat.",
+d_robusta:"Kopi robusta dataran tinggi Bali, disangrai medium-dark dan digiling halus untuk kopi tubruk.",
+d_kintamani:"Biji kopi arabika Kintamani dengan rasa jeruk yang segar. Cocok untuk V60 atau espresso.",
+d_terasi:"Sambal terasi ulek dengan terasi Bali asli. Level paling pedas di dapur kami.",
+d_pia:"Pia lembut berisi kacang hijau manis, resep turun-temurun keluarga Meme.",
+d_kuekacang:"Kue kering kacang yang lumer di mulut, dipanggang dengan mentega asli.",
+d_peyek:"Rempeyek tipis dan renyah dengan kacang tanah dan daun jeruk.",
+v_ori10:"Original isi 10",v_ori25:"Original isi 25",v_cok10:"Cokelat isi 10",g250:"250 g",g500:"500 g",g200:"200 g",g400:"400 g",g200b:"200 g biji",g150:"150 g",ml150:"150 ml",ml250:"250 ml",isi10:"Isi 10",
+f_cat:"Kategori",f_life:"Tahan",f_wt:"Ukuran",f_spice:"Pedas",days:"{n} hari",m_var:"Pilih varian",m_wa:"Pesan via WA · {p}",m_or:"atau beli di",m_fine:"Pesanan sebelum pukul 14.00 dikirim di hari yang sama.",
+h_eye:"Hampers",h_title:'Kado manis <span class="hl">untuk orang tersayang</span>',h_sub:"Dikemas dalam kotak anyaman ata dengan kartu ucapan tulisan tangan. Bisa dikirim langsung ke penerima.",
+hn_hmini:"Hampers Mini",hn_hkel:"Hampers Keluarga",hn_histi:"Hampers Istimewa",hs_hmini:"Hadiah kecil untuk teman dan rekan kerja.",hs_hkel:"Paling banyak dipesan untuk Galungan dan Lebaran.",hs_histi:"Lengkap, dalam keranjang bambu anyaman.",
+hi_pie10:"Pie Susu isi 10",hi_pie25:"Pie Susu isi 25",hi_disko:"Kacang Disko 250 g",hi_disko5:"Kacang Disko 500 g",hi_matah:"Sambal Matah 150 ml",hi_kopi:"Kopi Robusta 200 g",hi_singkong:"Keripik Singkong 200 g",hi_pisang:"Keripik Pisang 200 g",hi_pia:"Pia Kacang Hijau isi 10",hi_embe:"Sambal Embe 150 ml",hi_kintamani:"Arabika Kintamani 200 g",hi_kue:"Kue Kacang 250 g",hi_basket:"Keranjang bambu + kartu ucapan",
+popular:"Paling dipilih",h_note:"Butuh isi atau jumlah berbeda, atau logo perusahaan di kemasan?",h_note_btn:"Tanya hampers custom",
+o_eye:"Cara pesan",o_title:'Pesan semudah <span class="hl">kirim chat</span>',o_sub:"Tanpa daftar akun, tanpa ribet. Admin kami membalas dalam 15 menit pada jam buka.",o_badge:"Pesan sebelum 14.00, kirim hari ini",
+s1t:"Pilih produk",s1p:"Pilih varian dan jumlah di halaman produk, lalu tekan tombol WhatsApp.",s2t:"Kirim pesan otomatis",s2p:"Pesanan Anda sudah tertulis rapi. Tinggal tambahkan nama dan alamat pengiriman.",s3t:"Konfirmasi & bayar",s3p:"Admin mengirim total dan ongkir. Bayar lewat transfer bank atau QRIS.",s4t:"Dikemas dengan rapi",s4p:"Produk dikemas aman dengan bubble wrap dan kotak tebal, cocok untuk dibawa naik pesawat.",s5t:"Dikirim atau diambil",s5p:"Kurir kami untuk Denpasar dan Badung, ekspedisi untuk luar Bali, atau ambil langsung di toko.",
+c2_eye:"Pesanan khusus",c2_title:'Untuk acara, kantor, <span class="hl">dan rombongan</span>',c2_sub:"Ceritakan kebutuhan Anda, kami kirim penawaran lewat WhatsApp dalam 1 jam kerja.",
+u1t:"Hampers hari raya",u1p:"Galungan, Lebaran, Natal, Imlek. Min. 10 paket, pesan 7 hari sebelumnya.",u2t:"Suvenir pernikahan",u2p:"Pie susu atau keripik dengan label nama pengantin. Min. 100 pcs.",u3t:"Snack box kantor & seminar",u3p:"Mulai Rp 18.000/box, antar pagi hari untuk acara di Denpasar dan Badung.",u4t:"Oleh-oleh rombongan tur",u4p:"Paket praktis per orang, diantar langsung ke bus atau hotel.",
+of_t:"Minta penawaran",of_type:"Jenis pesanan",of_qty:"Jumlah (paket/pcs)",of_date:"Tanggal dibutuhkan",of_budget:"Budget per paket",of_extra:"Tambahan",of_logo:"Label / logo custom",of_org:"Instansi / acara (opsional)",of_note_ph:"Isi yang diinginkan, alamat kirim, dll.",send_wa:"Kirim via WhatsApp",
+ot_hampers:"Hampers hari raya",ot_wedding:"Suvenir pernikahan",ot_snack:"Snack box kantor / seminar",ot_tour:"Oleh-oleh rombongan tur",ot_other:"Lainnya",
+bd_1:"< Rp 50.000",bd_2:"Rp 50.000 – 150.000",bd_3:"Rp 150.000 – 300.000",bd_4:"> Rp 300.000",bd_0:"Belum tahu",
+f_name:"Nama",f_note:"Catatan",e_name:"Mohon isi nama.",e_qty:"Mohon isi jumlah pesanan.",e_date:"Mohon pilih tanggal yang belum lewat.",e_biz:"Mohon isi nama usaha dan kota.",e_msg:"Mohon isi pesan Anda.",
+p_eye:"Kemitraan",p_title:'Jadi mitra <span class="hl3">Dapur Meme</span>',p_sub:"Sudah lebih dari 120 toko, hotel, dan reseller menjual produk kami. Pilih jalur yang cocok untuk usaha Anda.",
+pt_res:"Reseller & dropship",pt_toko:"Toko oleh-oleh",pt_hotel:"Hotel, villa & travel",pt_cafe:"Kafe & restoran",
+pd_res:"Jual ulang produk Dapur Meme dari rumah atau online. Kami bantu foto produk dan materi promosi.",pl_res:"Harga grosir bertingkat, tanpa biaya pendaftaran|Bisa dropship: kami kirim atas nama toko Anda|Foto produk dan caption siap pakai|Grup WhatsApp khusus mitra untuk info stok",
+pd_toko:"Pajang produk kami di toko oleh-oleh atau minimarket Anda, dengan sistem beli putus atau titip jual.",pl_toko:"Beli putus dengan margin hingga 30%|Titip jual (konsinyasi) untuk toko yang baru mulai|Rak display dan label harga gratis|Pengiriman stok rutin setiap minggu",
+pd_hotel:"Welcome snack untuk tamu, oleh-oleh di kamar, atau minibar. Juga program komisi untuk pemandu dan travel agent.",pl_hotel:"Welcome snack mulai Rp 25.000/tamu dengan logo hotel|Hampers untuk tamu VIP dan honeymoon|Komisi 10% untuk pemandu tur dan travel agent|Faktur bulanan untuk pembelian rutin",
+pd_cafe:"Suplai sambal curah dan camilan untuk menu kafe dan restoran Anda.",pl_cafe:"Sambal matah, embe, dan terasi kemasan 1 kg|Camilan pendamping kopi dengan harga grosir|Bisa label private untuk restoran|Antar rutin di Denpasar, Badung, dan Gianyar",
+tier_t:"Harga grosir reseller",tier_q:"Jumlah per order",tier_d:"Diskon",t1:"20–49 pcs",t2:"50–99 pcs",t3:"100+ pcs",
+pf_t:"Daftar jadi mitra",pf_type:"Jalur kemitraan",pf_biz:"Nama usaha",pf_city:"Kota / area",pf_vol:"Perkiraan order per bulan",pf_btn:"Kirim pendaftaran via WhatsApp",
+vol_1:"< Rp 1 juta",vol_2:"Rp 1 – 5 juta",vol_3:"Rp 5 – 20 juta",vol_4:"> Rp 20 juta",
+k_eye:"Kontak",k_title:'Mampir ke toko, <span class="hl">cicipi dulu</span>',kf_t:"Kirim pesan lewat WhatsApp",kf_topic:"Keperluan",kf_msg:"Pesan",tp_q:"Pertanyaan produk",tp_o:"Status pesanan",tp_p:"Kerja sama",tp_x:"Lainnya",
+v_t:"Toko & dapur",v_addr:"Alamat",v_h1:"Senin – Sabtu",v_h2:"Minggu",v_map:"Petunjuk arah",
+q_title:'Yang sering <span class="hl">ditanyakan</span>',q_sub:"Belum ketemu jawabannya? Tanya langsung lewat WhatsApp.",
+faq:[["Berapa lama produk bisa bertahan?","Keripik dan kacang tahan 1–2 bulan, pie susu dan pia sekitar 7 hari, sambal matah 2 minggu di kulkas. Daya tahan tiap produk tertulis di halaman detailnya."],["Apakah bisa kirim ke luar Bali?","Bisa, ke seluruh Indonesia lewat ekspedisi. Ongkir dihitung admin berdasarkan berat dan kota tujuan."],["Bagaimana cara bayar?","Transfer bank atau QRIS setelah admin mengonfirmasi pesanan di WhatsApp. Untuk ambil di toko, bisa bayar tunai."],["Apakah sambal aman dibawa naik pesawat?","Sambal dikemas dalam botol kaca bersegel dan bubble wrap. Untuk kabin, cairan maksimal 100 ml; lebih aman dimasukkan ke bagasi."],["Bisa pesan dalam jumlah besar?","Bisa. Untuk lebih dari 50 paket, isi form pesanan khusus atau daftar sebagai mitra untuk mendapat harga grosir."]],
+f_title:"Matur suksma sudah mampir. Sampai jumpa di Bali!",f_join:"Gabung saluran promo WhatsApp",ft_p:"Oleh-oleh khas Bali buatan tangan sejak 1998. Pesan lewat WhatsApp, kirim ke seluruh Indonesia.",ft_shop:"Belanja",ft_co:"Perusahaan",ft_ct:"Kontak",ft_demo:"Website demo. Foto dari Unsplash; nomor izin, alamat, dan angka hanya contoh.",
+wa_general:"Halo Dapur Meme, saya mau tanya tentang produknya.",
+wa_prod:"Halo Dapur Meme, saya mau pesan:\n• {name} ({var}) × {qty} = {total}\n\nNama: \nAlamat pengiriman: ",
+wa_hamp:"Halo Dapur Meme, saya mau pesan {name} ({price}).\n\nNama: \nDikirim ke: ",
+wa_custom:"Halo Dapur Meme, saya mau minta penawaran pesanan khusus:\n• Jenis: {type}\n• Jumlah: {qty}\n• Tanggal: {date}\n• Budget per paket: {budget}\n• Label/logo custom: {logo}\n• Instansi/acara: {org}\n• Catatan: {note}\n\nNama: {name}",
+wa_partner:"Halo Dapur Meme, saya tertarik jadi mitra:\n• Jalur: {type}\n• Nama usaha: {biz}\n• Kota: {city}\n• Perkiraan order: {vol}\n\nNama: {name}",
+wa_contact:"Halo Dapur Meme, saya {name} dari {city}.\nKeperluan: {topic}\n\n{msg}",
+yes:"Ya",no:"Tidak",dash:"-"},
+en:{pol1:"Bestseller · baked every morning",pol2:"Spicy 🌶🌶🌶🌶 · freshly sliced",fs1:"Natural ingredients only",fs2:"Since 1998",fs3:"Bedugul, Kintamani, Tabanan",fs4:"Safe and licensed",fs5:"Neat and flight-safe",fs6:"Same day",og_eye:"From Balinese soil",og_title:'Every flavour has a <span class="hl">home village</span>',og_sub:"We buy directly from farmers and markets across Bali. Hover over a card for its story.",og1t:"Chillies & shallots",og1p:"Bird\'s-eye chillies and shallots from the cool highlands, for our sambal matah and embe.",og2t:"Arabica coffee",og2p:"Picked on the slopes of Mount Batur, from gardens run with the subak abian system.",og3t:"Peanuts & coconut",og3p:"Peanuts and coconuts from villages around the rice fields, for kacang disko and rempeyek.",og4t:"Meme\'s kitchen",og4p:"Everything is cooked and packed by hand by 14 women from the banjar around our kitchen.",p_cta_t:"Interested? Fill in the short form at the end of the page and our team will contact you.",p_cta:"Apply as a partner",kf_sub:"One form for everything: orders, hampers & events, or partnership.",kf_city:"City",tp_order:"Order products",tp_custom:"Hampers & events",tp_partner:"Partnership",tp_other:"Other",kph_order:"Products, quantities and delivery address",kph_custom:"Event type, number of packs, date and budget per pack",kph_partner:"Business name, type of business and expected monthly orders",kph_other:"Write your question",nav_about:"About us",nav_shop:"Products",nav_hamp:"Hampers",nav_how:"How to order",nav_partner:"Partnership",nav_contact:"Contact",nav_custom:"Custom orders",cta_wa:"Chat on WhatsApp",fab:"Order on WhatsApp",
+ann:["Free delivery in Denpasar & Badung over Rp 150,000","Order before 2pm, shipped today","Hampers & wedding favours available","Now accepting resellers and souvenir shops"],
+hero_eye:"Rahajeng rauh · Balinese souvenirs since 1998",hero_title:"Bali's flavours from <em>Meme's</em> kitchen, to take home.",hero_sub:"Handmade Balinese chips, sambal, sweets and coffee from a family recipe. No preservatives, shipped across Indonesia.",hero_cta1:"See products",hero_cta2:"Become a partner",hc_t:"Order on WhatsApp, or buy on",
+ft1:"No preservatives",ft2:"Family recipe",ft3:"Local Balinese ingredients",ft4:"PIRT & halal",ft5:"Gift-ready packaging",ft6:"Ships across Indonesia",
+a_eye:"About us",a_title:'Why <span class="hl">Dapur Meme?</span>',a_p:"It began in a small Denpasar kitchen in 1998, when Meme Sari baked pie susu for neighbours heading home to their villages. Today three generations and 14 women from the neighbourhood run the kitchen, still using chillies from Bedugul, coffee from Kintamani and peanuts from Tabanan.",
+ck1:"No preservatives or colouring",ck2:"Handmade every day",ck3:"Ingredients from Balinese farmers",ck4:"Hygienic, PIRT licensed",ck5:"Authentic Balinese taste",ck6:"Shipped the same day",
+sa1:"years in the kitchen",sa2:"boxes sold every month",sa3:"partners & resellers",sa4:"Balinese products",ch_t:"Also available on",
+c_eye:"Categories",c_title:'Souvenir <span class="hl">favourites</span>',c_sub:"Crunchy, spicy or sweet. Pick a category to see the products.",
+cat_all:"All",cat_keripik:"Chips & nuts",cat_sambal:"Balinese sambal",cat_jajanan:"Sweets & pastries",cat_kopi:"Bali coffee",cat_hampers:"Hampers",n_items:"{n} products",n_hamp:"3 hampers",
+s_eye:"Our products",s_title:'Order <span class="hl">directly</span> or on marketplaces',s_sub:"Tap a product to see sizes and shelf life. The WhatsApp button sends your order straight to us.",
+b_best:"Bestseller",b_new:"New",from:"from",order:"Order",details:"Details",empty:"No products in this category yet.",
+d_piesusu:"A crisp shell and a soft milk custard filling, baked every morning. Bali's most-wanted souvenir.",
+d_disko:"Tabanan peanuts coated in a garlicky batter and fried until crunchy and savoury.",
+d_matah:"Shallots, lemongrass, bird's-eye chilli and coconut oil, freshly sliced. Keep refrigerated after opening.",
+d_singkong:"Thin cassava chips with a sweet-spicy balado seasoning. Crunchy to the last bite.",
+d_pisang:"Thinly fried kepok bananas with palm sugar. Nicely sweet and loved by kids.",
+d_embe:"A Balinese sambal of fried shallots and chilli. Savoury and fragrant, perfect with warm rice.",
+d_robusta:"Robusta from Bali's highlands, medium-dark roast and finely ground for traditional tubruk coffee.",
+d_kintamani:"Kintamani arabica beans with bright citrus notes. Great for V60 or espresso.",
+d_terasi:"Hand-pounded sambal with authentic Balinese shrimp paste. The hottest one in our kitchen.",
+d_pia:"Soft pia pastries filled with sweet mung bean, from Meme's family recipe.",
+d_kuekacang:"Melt-in-your-mouth peanut cookies baked with real butter.",
+d_peyek:"Thin, crispy peanut crackers with kaffir lime leaves.",
+v_ori10:"Original, box of 10",v_ori25:"Original, box of 25",v_cok10:"Chocolate, box of 10",g250:"250 g",g500:"500 g",g200:"200 g",g400:"400 g",g200b:"200 g beans",g150:"150 g",ml150:"150 ml",ml250:"250 ml",isi10:"Box of 10",
+f_cat:"Category",f_life:"Keeps",f_wt:"Size",f_spice:"Spice",days:"{n} days",m_var:"Choose a size",m_wa:"Order on WA · {p}",m_or:"or buy on",m_fine:"Orders before 2pm ship the same day.",
+h_eye:"Hampers",h_title:'Sweet gifts <span class="hl">for the people you love</span>',h_sub:"Packed in a woven ata-grass box with a handwritten card. We can ship straight to the recipient.",
+hn_hmini:"Mini Hamper",hn_hkel:"Family Hamper",hn_histi:"Signature Hamper",hs_hmini:"A small gift for friends and colleagues.",hs_hkel:"Our most-ordered hamper for Galungan and Eid.",hs_histi:"Everything, in a woven bamboo basket.",
+hi_pie10:"Pie Susu, box of 10",hi_pie25:"Pie Susu, box of 25",hi_disko:"Kacang Disko 250 g",hi_disko5:"Kacang Disko 500 g",hi_matah:"Sambal Matah 150 ml",hi_kopi:"Robusta coffee 200 g",hi_singkong:"Cassava chips 200 g",hi_pisang:"Banana chips 200 g",hi_pia:"Mung bean pia, box of 10",hi_embe:"Sambal Embe 150 ml",hi_kintamani:"Kintamani arabica 200 g",hi_kue:"Peanut cookies 250 g",hi_basket:"Bamboo basket + greeting card",
+popular:"Most popular",h_note:"Need different contents, quantities or your company logo on the box?",h_note_btn:"Build a custom hamper",
+o_eye:"How to order",o_title:'Ordering is as easy <span class="hl">as sending a chat</span>',o_sub:"No account, no fuss. Our admin replies within 15 minutes during opening hours.",o_badge:"Order before 2pm, shipped today",
+s1t:"Pick a product",s1p:"Choose the size and quantity on the product page, then tap the WhatsApp button.",s2t:"Send the ready-made message",s2p:"Your order is already written out. Just add your name and delivery address.",s3t:"Confirm & pay",s3p:"Our admin sends the total and delivery cost. Pay by bank transfer or QRIS.",s4t:"Carefully packed",s4p:"Bubble wrap and a sturdy box keep everything safe, even on a flight home.",s5t:"Delivered or picked up",s5p:"Our courier in Denpasar and Badung, national couriers beyond Bali, or pick up at the store.",
+c2_eye:"Custom orders",c2_title:'For events, offices <span class="hl">and tour groups</span>',c2_sub:"Tell us what you need and we'll send a quote on WhatsApp within one working hour.",
+u1t:"Festive hampers",u1p:"Galungan, Eid, Christmas, Chinese New Year. Min. 10 hampers, 7 days' notice.",u2t:"Wedding favours",u2p:"Pie susu or chips with the couple's names on the label. Min. 100 pcs.",u3t:"Office & seminar snack boxes",u3p:"From Rp 18,000/box, morning delivery for events in Denpasar and Badung.",u4t:"Tour group souvenirs",u4p:"Easy per-person packs, delivered to the bus or hotel.",
+of_t:"Request a quote",of_type:"Order type",of_qty:"Quantity (packs/pcs)",of_date:"Needed by",of_budget:"Budget per pack",of_extra:"Extras",of_logo:"Custom label / logo",of_org:"Company / event (optional)",of_note_ph:"Preferred contents, delivery address, etc.",send_wa:"Send via WhatsApp",
+ot_hampers:"Festive hampers",ot_wedding:"Wedding favours",ot_snack:"Office / seminar snack box",ot_tour:"Tour group souvenirs",ot_other:"Other",
+bd_1:"< Rp 50,000",bd_2:"Rp 50,000 – 150,000",bd_3:"Rp 150,000 – 300,000",bd_4:"> Rp 300,000",bd_0:"Not sure yet",
+f_name:"Name",f_note:"Notes",e_name:"Please add your name.",e_qty:"Please add a quantity.",e_date:"Please pick a date that hasn't passed.",e_biz:"Please add your business name and city.",e_msg:"Please write your message.",
+p_eye:"Partnership",p_title:'Partner with <span class="hl3">Dapur Meme</span>',p_sub:"More than 120 shops, hotels and resellers already sell our products. Pick the route that suits your business.",
+pt_res:"Resellers & dropship",pt_toko:"Souvenir shops",pt_hotel:"Hotels, villas & travel",pt_cafe:"Cafés & restaurants",
+pd_res:"Resell Dapur Meme products from home or online. We help with product photos and promo material.",pl_res:"Tiered wholesale prices, no sign-up fee|Dropship available: we ship under your shop's name|Ready-made product photos and captions|Partner WhatsApp group for stock updates",
+pd_toko:"Stock our products in your souvenir shop or minimarket, on outright purchase or consignment.",pl_toko:"Outright purchase with up to 30% margin|Consignment for shops just starting out|Free display shelf and price labels|Weekly restock deliveries",
+pd_hotel:"Welcome snacks for guests, in-room souvenirs or minibar items. Plus a commission programme for guides and travel agents.",pl_hotel:"Welcome snacks from Rp 25,000/guest with your hotel logo|Hampers for VIP and honeymoon guests|10% commission for tour guides and travel agents|Monthly invoicing for regular orders",
+pd_cafe:"Bulk sambal and snacks for your café and restaurant menu.",pl_cafe:"Sambal matah, embe and terasi in 1 kg packs|Coffee-side snacks at wholesale prices|Private labelling for restaurants|Regular delivery in Denpasar, Badung and Gianyar",
+tier_t:"Reseller wholesale prices",tier_q:"Quantity per order",tier_d:"Discount",t1:"20–49 pcs",t2:"50–99 pcs",t3:"100+ pcs",
+pf_t:"Apply to become a partner",pf_type:"Partnership route",pf_biz:"Business name",pf_city:"City / area",pf_vol:"Expected monthly orders",pf_btn:"Send application via WhatsApp",
+vol_1:"< Rp 1 million",vol_2:"Rp 1 – 5 million",vol_3:"Rp 5 – 20 million",vol_4:"> Rp 20 million",
+k_eye:"Contact",k_title:'Drop by the store <span class="hl">and taste first</span>',kf_t:"Send us a WhatsApp message",kf_topic:"What is it about?",kf_msg:"Message",tp_q:"Product question",tp_o:"Order status",tp_p:"Business enquiry",tp_x:"Other",
+v_t:"Store & kitchen",v_addr:"Address",v_h1:"Monday – Saturday",v_h2:"Sunday",v_map:"Get directions",
+q_title:'Frequently <span class="hl">asked questions</span>',q_sub:"Can't find your answer? Ask us on WhatsApp.",
+faq:[["How long do the products keep?","Chips and nuts keep 1–2 months, pie susu and pia about 7 days, sambal matah 2 weeks in the fridge. Each product page shows its shelf life."],["Do you ship outside Bali?","Yes, anywhere in Indonesia by courier. Our admin calculates shipping by weight and destination."],["How do I pay?","Bank transfer or QRIS once our admin confirms your order on WhatsApp. Cash is fine for store pickup."],["Can I take sambal on a plane?","Our sambal comes in sealed glass jars wrapped in bubble wrap. Cabin liquids are limited to 100 ml, so checked baggage is safer."],["Can I order in bulk?","Yes. For more than 50 packs, use the custom order form or apply as a partner for wholesale prices."]],
+f_title:"Matur suksma for stopping by. See you in Bali!",f_join:"Join our WhatsApp promo channel",ft_p:"Handmade Balinese souvenirs since 1998. Order on WhatsApp, shipped across Indonesia.",ft_shop:"Shop",ft_co:"Company",ft_ct:"Contact",ft_demo:"Demo website. Photos from Unsplash; licence numbers, address and figures are placeholders.",
+wa_general:"Hello Dapur Meme, I'd like to ask about your products.",
+wa_prod:"Hello Dapur Meme, I'd like to order:\n• {name} ({var}) × {qty} = {total}\n\nName: \nDelivery address: ",
+wa_hamp:"Hello Dapur Meme, I'd like to order the {name} ({price}).\n\nName: \nDeliver to: ",
+wa_custom:"Hello Dapur Meme, I'd like a quote for a custom order:\n• Type: {type}\n• Quantity: {qty}\n• Date: {date}\n• Budget per pack: {budget}\n• Custom label/logo: {logo}\n• Company/event: {org}\n• Notes: {note}\n\nName: {name}",
+wa_partner:"Hello Dapur Meme, I'd like to become a partner:\n• Route: {type}\n• Business: {biz}\n• City: {city}\n• Expected orders: {vol}\n\nName: {name}",
+wa_contact:"Hello Dapur Meme, this is {name} from {city}.\nAbout: {topic}\n\n{msg}",
+yes:"Yes",no:"No",dash:"-"},
+zh:{pol1:"热销 · 每天早上烘烤",pol2:"辣度 🌶🌶🌶🌶 · 新鲜切制",fs1:"只用天然食材",fs2:"始于1998年",fs3:"贝都古、金塔马尼、塔巴南",fs4:"安全且持证",fs5:"包装精美，可带上飞机",fs6:"当天发货",og_eye:"来自巴厘岛的土地",og_title:'每一种味道都有<span class="hl">自己的家乡</span>',og_sub:"我们直接向巴厘岛各地的农户和市场采购。将鼠标移到卡片上查看故事。",og1t:"辣椒与红葱头",og1p:"来自凉爽高地的小米辣和红葱头，用于制作马塔和恩贝辣酱。",og2t:"阿拉比卡咖啡",og2p:"采摘自巴图尔火山山坡上的咖啡园，以传统subak abian灌溉体系管理。",og3t:"花生与椰子",og3p:"来自稻田周边村庄的花生和椰子，用于制作迪斯科花生和花生脆饼。",og4t:"Meme的厨房",og4p:"所有产品都由厨房周边社区的14位妈妈手工烹制和包装。",p_cta_t:"感兴趣吗？填写页面底部的简短表格，我们的团队会联系您。",p_cta:"申请成为合作伙伴",kf_sub:"一个表格搞定一切：订购、礼盒与活动，或合作加盟。",kf_city:"城市",tp_order:"订购产品",tp_custom:"礼盒与活动",tp_partner:"合作加盟",tp_other:"其他",kph_order:"产品、数量和收货地址",kph_custom:"活动类型、份数、日期和每份预算",kph_partner:"店铺名称、业务类型和预计每月订货额",kph_other:"请写下您的问题",nav_about:"关于我们",nav_shop:"产品",nav_hamp:"礼盒",nav_how:"订购方式",nav_partner:"合作加盟",nav_contact:"联系我们",nav_custom:"定制订单",cta_wa:"WhatsApp咨询",fab:"WhatsApp下单",
+ann:["登巴萨和巴东满Rp 150,000免运费","14:00前下单当天发货","承接礼盒与婚礼伴手礼订单","招募分销商与伴手礼店合作伙伴"],
+hero_eye:"Rahajeng rauh（欢迎光临）· 自1998年的巴厘岛特产",hero_title:'来自<em>Meme</em>厨房的巴厘岛味道，带回家吧。',hero_sub:"家传配方手工制作的巴厘岛薯片、参巴辣酱、传统点心和咖啡。不含防腐剂，可寄送至印尼全国。",hero_cta1:"查看产品",hero_cta2:"成为合作伙伴",hc_t:"通过WhatsApp下单，或在以下平台购买",
+ft1:"不含防腐剂",ft2:"家传配方",ft3:"巴厘岛本地食材",ft4:"PIRT与清真认证",ft5:"精美伴手礼包装",ft6:"寄送印尼全国",
+a_eye:"关于我们",a_title:'为什么选择<span class="hl">Dapur Meme？</span>',a_p:"1998年，Meme Sari在登巴萨的一间小厨房里，为准备回乡的邻居们烤制牛奶挞。如今由三代人和14位社区妈妈共同经营，依然使用贝都古的辣椒、金塔马尼的咖啡和塔巴南的花生。",
+ck1:"不含防腐剂和色素",ck2:"每天手工制作",ck3:"来自巴厘岛农户的食材",ck4:"卫生，持有PIRT许可",ck5:"地道巴厘岛风味",ck6:"当天发货",
+sa1:"年的手艺",sa2:"每月售出盒数",sa3:"合作伙伴与分销商",sa4:"款巴厘岛特产",ch_t:"也可在以下平台购买",
+c_eye:"分类",c_title:'精选<span class="hl">伴手礼</span>',c_sub:"香脆、香辣或香甜，选择分类查看产品。",
+cat_all:"全部",cat_keripik:"薯片与坚果",cat_sambal:"巴厘岛辣酱",cat_jajanan:"传统点心",cat_kopi:"巴厘岛咖啡",cat_hampers:"礼盒",n_items:"{n}款产品",n_hamp:"3款礼盒",
+s_eye:"我们的产品",s_title:'<span class="hl">直接下单</span>或在电商平台购买',s_sub:"点击产品查看规格和保质期。WhatsApp按钮会直接发送您的订单。",
+b_best:"热销",b_new:"新品",from:"起",order:"下单",details:"详情",empty:"此分类暂无产品。",
+d_piesusu:"酥脆的外皮配上柔滑的牛奶馅，每天早上新鲜烘烤。最受欢迎的巴厘岛伴手礼。",
+d_disko:"塔巴南花生裹上蒜香面衣，炸至香脆可口。",
+d_matah:"红葱头、香茅、小米辣和椰子油新鲜切制。开封后请冷藏。",
+d_singkong:"薄切木薯片配甜辣风味调料，每一口都香脆。",
+d_pisang:"精选香蕉薄片油炸，加入椰糖，甜度适中，孩子们都爱吃。",
+d_embe:"巴厘岛特色辣酱，以炸红葱头和辣椒制成，香气浓郁，配米饭最佳。",
+d_robusta:"巴厘岛高地罗布斯塔咖啡，中深烘焙，细磨适合传统冲煮。",
+d_kintamani:"金塔马尼阿拉比卡咖啡豆，带有清新柑橘风味，适合手冲或意式浓缩。",
+d_terasi:"使用正宗巴厘岛虾酱手工捣制，是我们最辣的一款。",
+d_pia:"软糯的绿豆馅饼，Meme家族世代相传的配方。",
+d_kuekacang:"入口即化的花生酥饼，使用真正的黄油烘烤。",
+d_peyek:"薄脆花生饼，加入青柠叶增香。",
+v_ori10:"原味 10个装",v_ori25:"原味 25个装",v_cok10:"巧克力味 10个装",g250:"250克",g500:"500克",g200:"200克",g400:"400克",g200b:"200克咖啡豆",g150:"150克",ml150:"150毫升",ml250:"250毫升",isi10:"10个装",
+f_cat:"分类",f_life:"保质期",f_wt:"规格",f_spice:"辣度",days:"{n}天",m_var:"选择规格",m_wa:"WhatsApp下单 · {p}",m_or:"或在以下平台购买",m_fine:"14:00前下单当天发货。",
+h_eye:"礼盒",h_title:'甜蜜心意，<span class="hl">送给挚爱的人</span>',h_sub:"使用巴厘岛ata草编盒包装，附手写贺卡，可直接寄送给收礼人。",
+hn_hmini:"迷你礼盒",hn_hkel:"家庭礼盒",hn_histi:"尊享礼盒",hs_hmini:"送给朋友和同事的小礼物。",hs_hkel:"加隆安节和开斋节最受欢迎的礼盒。",hs_histi:"全系列产品，装在手工竹篮中。",
+hi_pie10:"牛奶挞 10个装",hi_pie25:"牛奶挞 25个装",hi_disko:"迪斯科花生 250克",hi_disko5:"迪斯科花生 500克",hi_matah:"参巴马塔辣酱 150毫升",hi_kopi:"罗布斯塔咖啡 200克",hi_singkong:"木薯片 200克",hi_pisang:"香蕉片 200克",hi_pia:"绿豆馅饼 10个装",hi_embe:"参巴恩贝辣酱 150毫升",hi_kintamani:"金塔马尼阿拉比卡 200克",hi_kue:"花生酥饼 250克",hi_basket:"竹篮 + 贺卡",
+popular:"最受欢迎",h_note:"需要不同的内容、数量，或在包装上印公司标志？",h_note_btn:"定制礼盒",
+o_eye:"订购方式",o_title:'下单就像<span class="hl">发消息一样简单</span>',o_sub:"无需注册账号。营业时间内客服15分钟内回复。",o_badge:"14:00前下单，当天发货",
+s1t:"选择产品",s1p:"在产品页面选择规格和数量，然后点击WhatsApp按钮。",s2t:"发送自动生成的消息",s2p:"订单内容已自动写好，只需补充姓名和收货地址。",s3t:"确认并付款",s3p:"客服会发送总价和运费，可通过银行转账或QRIS付款。",s4t:"精心包装",s4p:"使用气泡膜和厚纸箱包装，搭飞机带回家也安心。",s5t:"送货或自取",s5p:"登巴萨和巴东由我们的配送员送达，巴厘岛以外使用快递，也可到店自取。",
+c2_eye:"定制订单",c2_title:'活动、公司与<span class="hl">旅行团订单</span>',c2_sub:"告诉我们您的需求，我们会在一个工作小时内通过WhatsApp报价。",
+u1t:"节日礼盒",u1p:"加隆安节、开斋节、圣诞节、春节。最少10份，需提前7天预订。",u2t:"婚礼伴手礼",u2p:"印有新人名字标签的牛奶挞或薯片。最少100份。",u3t:"公司与会议点心盒",u3p:"每盒Rp 18,000起，登巴萨和巴东活动可早上送达。",u4t:"旅行团伴手礼",u4p:"每人一份的便捷礼包，直接送到旅游大巴或酒店。",
+of_t:"获取报价",of_type:"订单类型",of_qty:"数量（份/个）",of_date:"需要日期",of_budget:"每份预算",of_extra:"附加",of_logo:"定制标签/标志",of_org:"公司/活动（可选）",of_note_ph:"想要的内容、送货地址等",send_wa:"通过WhatsApp发送",
+ot_hampers:"节日礼盒",ot_wedding:"婚礼伴手礼",ot_snack:"公司/会议点心盒",ot_tour:"旅行团伴手礼",ot_other:"其他",
+bd_1:"< Rp 50,000",bd_2:"Rp 50,000 – 150,000",bd_3:"Rp 150,000 – 300,000",bd_4:"> Rp 300,000",bd_0:"尚未确定",
+f_name:"姓名",f_note:"备注",e_name:"请填写您的姓名。",e_qty:"请填写数量。",e_date:"请选择今天之后的日期。",e_biz:"请填写店铺名称和城市。",e_msg:"请填写留言内容。",
+p_eye:"合作加盟",p_title:'成为<span class="hl3">Dapur Meme</span>合作伙伴',p_sub:"已有超过120家商店、酒店和分销商销售我们的产品。选择适合您生意的合作方式。",
+pt_res:"分销与代发",pt_toko:"伴手礼商店",pt_hotel:"酒店、别墅与旅行社",pt_cafe:"咖啡馆与餐厅",
+pd_res:"在家或网上转售Dapur Meme产品，我们提供产品照片和推广素材。",pl_res:"阶梯批发价，无加盟费|支持代发：以您的店铺名义发货|现成的产品图片和文案|合作伙伴专属WhatsApp群，及时获取库存信息",
+pd_toko:"在您的伴手礼店或便利店陈列我们的产品，可买断或寄售。",pl_toko:"买断利润最高可达30%|新开店铺可选择寄售|免费提供陈列架和价签|每周定期补货",
+pd_hotel:"为客人准备欢迎点心、房间伴手礼或迷你吧商品，并为导游和旅行社提供佣金计划。",pl_hotel:"欢迎点心每位Rp 25,000起，可印酒店标志|为贵宾和蜜月客人准备礼盒|导游和旅行社可获10%佣金|定期采购按月结算",
+pd_cafe:"为咖啡馆和餐厅菜单供应大包装辣酱和小吃。",pl_cafe:"马塔、恩贝和虾酱辣酱1公斤装|咖啡搭配小吃享批发价|餐厅可定制私人标签|登巴萨、巴东和吉安雅定期配送",
+tier_t:"分销商批发价",tier_q:"每单数量",tier_d:"折扣",t1:"20–49个",t2:"50–99个",t3:"100个以上",
+pf_t:"申请成为合作伙伴",pf_type:"合作方式",pf_biz:"店铺名称",pf_city:"城市/地区",pf_vol:"预计每月订货额",pf_btn:"通过WhatsApp提交申请",
+vol_1:"< Rp 100万",vol_2:"Rp 100万 – 500万",vol_3:"Rp 500万 – 2000万",vol_4:"> Rp 2000万",
+k_eye:"联系我们",k_title:'到店来，<span class="hl">先尝再买</span>',kf_t:"通过WhatsApp给我们留言",kf_topic:"咨询类型",kf_msg:"留言",tp_q:"产品咨询",tp_o:"订单状态",tp_p:"商务合作",tp_x:"其他",
+v_t:"门店与厨房",v_addr:"地址",v_h1:"周一至周六",v_h2:"周日",v_map:"查看路线",
+q_title:'常见<span class="hl">问题</span>',q_sub:"没找到答案？直接通过WhatsApp问我们。",
+faq:[["产品可以保存多久？","薯片和坚果可保存1–2个月，牛奶挞和馅饼约7天，马塔辣酱冷藏可保存2周。每款产品的保质期都写在详情页中。"],["可以寄到巴厘岛以外吗？","可以，通过快递寄送到印尼全国。运费由客服根据重量和目的地计算。"],["如何付款？","客服在WhatsApp确认订单后，可通过银行转账或QRIS付款。到店自取可付现金。"],["辣酱可以带上飞机吗？","辣酱使用密封玻璃瓶并以气泡膜包装。随身行李液体限100毫升，建议放入托运行李。"],["可以大量订购吗？","可以。超过50份请填写定制订单表格，或申请成为合作伙伴以享受批发价。"]],
+f_title:"Matur suksma（感谢）光临，巴厘岛见！",f_join:"加入WhatsApp优惠频道",ft_p:"自1998年起手工制作的巴厘岛特产。WhatsApp下单，寄送印尼全国。",ft_shop:"购物",ft_co:"公司",ft_ct:"联系方式",ft_demo:"演示网站。照片来自Unsplash；许可证号、地址和数据仅为示例。",
+wa_general:"您好 Dapur Meme，我想咨询一下产品。",
+wa_prod:"您好 Dapur Meme，我想订购：\n• {name}（{var}）× {qty} = {total}\n\n姓名：\n收货地址：",
+wa_hamp:"您好 Dapur Meme，我想订购{name}（{price}）。\n\n姓名：\n寄送至：",
+wa_custom:"您好 Dapur Meme，我想获取定制订单报价：\n• 类型：{type}\n• 数量：{qty}\n• 日期：{date}\n• 每份预算：{budget}\n• 定制标签/标志：{logo}\n• 公司/活动：{org}\n• 备注：{note}\n\n姓名：{name}",
+wa_partner:"您好 Dapur Meme，我想成为合作伙伴：\n• 合作方式：{type}\n• 店铺名称：{biz}\n• 城市：{city}\n• 预计订货额：{vol}\n\n姓名：{name}",
+wa_contact:"您好 Dapur Meme，我是来自{city}的{name}。\n咨询类型：{topic}\n\n{msg}",
+yes:"是",no:"否",dash:"-"}
+};
+let lang="id";try{lang=localStorage.getItem("dm-lang")||"id"}catch(e){}
+if(!I18N[lang])lang="id";
+const t=(k,v)=>{let s=(I18N[lang][k]!=null)?I18N[lang][k]:(I18N.id[k]!=null?I18N.id[k]:k);if(v&&typeof s==="string")for(const x in v)s=s.split("{"+x+"}").join(v[x]);return s};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $=id=>document.getElementById(id);
+const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+const GLIDE="cubic-bezier(.22,1,.36,1)";
+const money=n=>"Rp "+Math.round(n).toLocaleString("id-ID");
+const anim=(el,kf,o)=>{if(!reduce&&el&&el.animate)return el.animate(kf,Object.assign({easing:GLIDE},o))};
+function guard(root){(root||document).querySelectorAll(".ph img").forEach(img=>{if(img._g)return;img._g=1;img.addEventListener("error",()=>img.classList.add("broken"))})}
+const waHref=msg=>"https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+const shopee=q=>"https://shopee.co.id/search?keyword="+encodeURIComponent(q);
+const tokped=q=>"https://www.tokopedia.com/search?q="+encodeURIComponent(q);
+const pById=id=>P.find(p=>p.id===id);
+const minPrice=p=>Math.min(...p.v.map(v=>v[1]));
+const DAY=86400000,T=(()=>{const d=new Date();return Math.round(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/DAY)})();
+const toS=n=>new Date(n*DAY).toISOString().slice(0,10);
+const shake=el=>anim(el,[{transform:"translateX(0)"},{transform:"translateX(-6px)"},{transform:"translateX(6px)"},{transform:"translateX(0)"}],{duration:380});
+
+/* smooth scroll */
+let lenis=null;
+if(window.Lenis&&!reduce){try{lenis=new Lenis({duration:1.25,easing:x=>Math.min(1,1.001-Math.pow(2,-10*x)),smoothWheel:true,wheelMultiplier:.95,touchMultiplier:1.4});const raf=time=>{lenis.raf(time);requestAnimationFrame(raf)};requestAnimationFrame(raf)}catch(e){lenis=null}}
+const easeIO=p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+let sRaf=0;
+function smoothTo(y){if(lenis){lenis.scrollTo(y,{duration:Math.min(1.8,.9+Math.abs(y-window.scrollY)/3000),easing:easeIO});return}
+ cancelAnimationFrame(sRaf);const s0=window.scrollY,d=y-s0;if(reduce||Math.abs(d)<2){window.scrollTo(0,y);return}const dur=Math.min(1500,650+Math.abs(d)*.22);let t0=null;const st=ts=>{if(t0===null)t0=ts;const p=Math.min(1,(ts-t0)/dur);window.scrollTo(0,s0+d*easeIO(p));if(p<1)sRaf=requestAnimationFrame(st)};sRaf=requestAnimationFrame(st)}
+["wheel","touchstart","keydown"].forEach(ev=>window.addEventListener(ev,()=>cancelAnimationFrame(sRaf),{passive:true}));
+function go(id){const el=$(id);if(!el)return;const y=id==="top"?0:el.getBoundingClientRect().top+window.scrollY-90;smoothTo(Math.max(0,y));$("mobileNav").hidden=true;$("menuBtn").setAttribute("aria-expanded","false")}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b){e.preventDefault();closeModal();go(b.dataset.go)}});
+$("menuBtn").addEventListener("click",()=>{const m=$("mobileNav");m.hidden=!m.hidden;$("menuBtn").setAttribute("aria-expanded",String(!m.hidden));if(!m.hidden)anim(m,[{opacity:0,transform:"translateY(-10px)"},{opacity:1,transform:"none"}],{duration:500})});
+
+/* knob */
+function moveKnob(seg,instant){const k=seg.querySelector(".knob"),b=seg.querySelector('button[aria-pressed="true"]');if(!k||!b)return;if(instant)k.style.transition="none";k.style.width=b.offsetWidth+"px";k.style.transform="translateX("+b.offsetLeft+"px)";if(instant){void k.offsetWidth;k.style.transition=""}}
+window.addEventListener("resize",()=>moveKnob($("langSeg"),true));
+
+/* scroll effects */
+let scRaf=0;const hero=$("hero");
+function onScroll(){const y=window.scrollY;$("hdr").classList.toggle("scrolled",y>20);if(!reduce&&y<1000)hero.style.setProperty("--py",(y*.14).toFixed(1)+"px")}
+window.addEventListener("scroll",()=>{cancelAnimationFrame(scRaf);scRaf=requestAnimationFrame(onScroll)},{passive:true});
+
+/* reveal */
+function stagger(parent,base){[...parent.children].filter(c=>!c.hidden).forEach((c,i)=>anim(c,[{opacity:0,transform:"translateY(40px) scale(.97)"},{opacity:1,transform:"none"}],{duration:1100,delay:(base||0)+i*90,fill:"backwards"}))}
+function countUp(){document.querySelectorAll("[data-count]").forEach(el=>{const to=+el.dataset.count,suf=el.dataset.suffix||"";const fmt=n=>n.toLocaleString(lang==="en"||lang==="zh"?"en-US":"id-ID")+suf;if(reduce){el.textContent=fmt(to);return}const t0=performance.now(),dur=1700;const st=now=>{const p=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(to*e));if(p<1)requestAnimationFrame(st)};requestAnimationFrame(st)})}
+if("IntersectionObserver" in window&&!reduce){const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;if(el.classList.contains("rv-s"))stagger(el);else el.classList.add("in");if(el.id==="stats")countUp();io.unobserve(el)}),{rootMargin:"0px 0px -10% 0px"});document.querySelectorAll(".rv,.rv-s").forEach(el=>io.observe(el))}
+else{document.querySelectorAll(".rv").forEach(el=>el.classList.add("in"));countUp()}
+
+/* intro */
+function intro(){if(reduce)return;[...document.querySelectorAll(".hdr-in > *")].forEach((el,i)=>anim(el,[{opacity:0,transform:"translateY(-14px)"},{opacity:1,transform:"none"}],{duration:900,delay:i*80,fill:"backwards"}));
+ anim(hero,[{clipPath:"inset(6% 4% 6% 4% round 40px)",opacity:.4},{clipPath:"inset(0 0 0 0 round 32px)",opacity:1}],{duration:1500,fill:"backwards"});
+ anim(hero.querySelector(".ph img"),[{scale:"1.2"},{scale:"1"}],{duration:2200,fill:"backwards"});
+ [...hero.querySelectorAll(".hero-c > *")].forEach((el,i)=>anim(el,[{opacity:0,transform:"translateY(30px)"},{opacity:1,transform:"none"}],{duration:1100,delay:400+i*110,fill:"backwards"}));
+ [...hero.querySelectorAll(".pol")].forEach((el,i)=>anim(el,[{opacity:0,translate:"0 60px"},{opacity:1,translate:"0 0"}],{duration:1300,delay:800+i*180,fill:"backwards"}));
+ anim(hero.querySelector(".gate"),[{opacity:0,transform:"translateY(-16px)"},{opacity:.9,transform:"none"}],{duration:1000,delay:1100,fill:"backwards"})}
+
+/* category carousel */
+let cat="all";
+function renderCarousel(){$("carousel").innerHTML=CATS.map(c=>{const n=c.k==="hampers"?t("n_hamp"):t("n_items",{n:P.filter(p=>p.cat===c.k).length});return'<button type="button" class="cat" data-cat="'+c.k+'"><div class="ph"><img src="'+U(c.img,700)+'" alt="" loading="lazy"></div><div><h3>'+esc(t("cat_"+c.k))+"</h3><small>"+esc(n)+"</small></div></button>"}).join("");guard($("carousel"));carCtl()}
+function carStep(d){const c=$("carousel"),card=c.querySelector(".cat");if(!card)return;const w=card.getBoundingClientRect().width+16;c.scrollBy({left:d*w,behavior:reduce?"auto":"smooth"})}
+function carCtl(){const c=$("carousel");$("cPrev").disabled=c.scrollLeft<4;$("cNext").disabled=c.scrollLeft+c.clientWidth>=c.scrollWidth-4}
+$("cPrev").addEventListener("click",()=>carStep(-1));$("cNext").addEventListener("click",()=>carStep(1));$("carousel").addEventListener("scroll",carCtl,{passive:true});window.addEventListener("resize",carCtl);
+$("carousel").addEventListener("click",e=>{const b=e.target.closest(".cat");if(!b)return;if(b.dataset.cat==="hampers"){go("hampers");return}go("range");setTimeout(()=>setCat(b.dataset.cat),600)});
+
+/* product range */
+function renderChips(){$("chips").innerHTML=["all","keripik","sambal","jajanan","kopi"].map(k=>'<button type="button" data-c="'+k+'" aria-pressed="'+(k===cat)+'">'+esc(t("cat_"+k))+"</button>").join("")}
+$("chips").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setCat(b.dataset.c)});
+function setCat(c){if(c===cat)return;cat=c;$("chips").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===cat)));renderGrid(true)}
+const spice=n=>n?"🌶".repeat(n):"";
+function prodMsg(p,vi,q){return t("wa_prod",{name:p.name,var:t(p.v[vi][0]),qty:q,total:money(p.v[vi][1]*q)})}
+function cardHTML(p){return'<article class="prod" tabindex="0" data-p="'+p.id+'"'+(cat==="all"||p.cat===cat?"":" hidden")+'><div class="ph"><img src="'+U(p.img,700)+'" alt="'+esc(p.name)+'" loading="lazy">'+(p.badge?'<span class="pbadge '+(p.badge==="new"?"new":"")+'">'+esc(t("b_"+p.badge))+"</span>":"")+(p.spice?'<span class="spice">'+spice(p.spice)+"</span>":"")+'</div><div class="prod-b"><h3>'+esc(p.name)+'</h3><span class="sub">'+esc(t("d_"+p.id))+'</span><span class="price">'+(p.v.length>1?"<small>"+esc(t("from"))+"</small>":"")+money(minPrice(p))+'</span></div><div class="prod-f"><a class="btn wa" href="'+waHref(prodMsg(p,0,1))+'" target="_blank" rel="noopener" data-stop><svg width="16" height="16"><use href="#i-chat"/></svg>'+esc(t("order"))+'</a><a class="mp" href="'+shopee(p.name+" bali")+'" target="_blank" rel="noopener" data-stop title="Shopee" aria-label="Shopee"><i style="background:#EE4D2D"></i></a><a class="mp" href="'+tokped(p.name+" bali")+'" target="_blank" rel="noopener" data-stop title="Tokopedia" aria-label="Tokopedia"><i style="background:#03AC0E"></i></a></div></article>'}
+function buildGrid(){$("grid").innerHTML=P.map(cardHTML).join("")+'<div class="empty" hidden>'+esc(t("empty"))+"</div>";guard($("grid"))}
+let gBusy=0;
+function renderGrid(animate){const g=$("grid");const cards=[...g.querySelectorAll(".prod")],first=new Map();cards.forEach(c=>{if(!c.hidden)first.set(c,c.getBoundingClientRect())});
+ const show=c=>cat==="all"||pById(c.dataset.p).cat===cat;const leaving=cards.filter(c=>!c.hidden&&!show(c));
+ if(!animate||reduce){cards.forEach(c=>c.hidden=!show(c));g.querySelector(".empty").hidden=cards.some(c=>!c.hidden);return}
+ leaving.forEach(c=>c.classList.add("out"));clearTimeout(gBusy);
+ gBusy=setTimeout(()=>{let n=0;cards.forEach(c=>{c.hidden=!show(c);c.classList.remove("out")});g.querySelector(".empty").hidden=cards.some(c=>!c.hidden);
+  cards.forEach(c=>{if(c.hidden)return;const f=first.get(c),l=c.getBoundingClientRect();if(f&&!leaving.includes(c)){const dx=f.left-l.left,dy=f.top-l.top;if(dx||dy)anim(c,[{transform:"translate("+dx+"px,"+dy+"px)"},{transform:"none"}],{duration:850})}else anim(c,[{opacity:0,transform:"translateY(30px) scale(.94)"},{opacity:1,transform:"none"}],{duration:950,delay:80+(n++)*80,fill:"backwards"})})},leaving.length?300:0)}
+$("grid").addEventListener("click",e=>{if(e.target.closest("[data-stop]"))return;const c=e.target.closest(".prod");if(c)openProd(c.dataset.p)});
+$("grid").addEventListener("keydown",e=>{const c=e.target.closest(".prod");if(c&&e.target===c&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openProd(c.dataset.p)}});
+
+/* hampers */
+function renderHampers(){$("hampGrid").innerHTML=H.map(h=>'<article class="hamp'+(h.feat?" feat":"")+'"><div class="ph"><img src="'+U(h.img,900)+'" alt="" loading="lazy">'+(h.feat?'<span class="pbadge">'+esc(t("popular"))+"</span>":"")+'</div><div class="hamp-b"><h3>'+esc(t("hn_"+h.id))+'</h3><p style="opacity:.8;font-size:.92rem">'+esc(t("hs_"+h.id))+"</p><ul>"+h.items.map(i=>"<li>"+esc(t(i))+"</li>").join("")+'</ul></div><div class="hamp-f"><b>'+money(h.price)+'</b><a class="btn sm '+(h.feat?"tur":"wa")+'" href="'+waHref(t("wa_hamp",{name:t("hn_"+h.id),price:money(h.price)}))+'" target="_blank" rel="noopener"><svg width="16" height="16"><use href="#i-chat"/></svg>'+esc(t("order"))+"</a></div></article>").join("");guard($("hampGrid"))}
+
+/* product modal */
+let cur=null,vI=0,mq=1,lastFocus=null;
+function openProd(id){cur=pById(id);vI=0;mq=1;lastFocus=document.activeElement;
+ $("mImg").innerHTML='<img src="'+U(cur.img,1200)+'" alt="'+esc(cur.name)+'">';guard($("mImg"));fillProd();
+ [...document.querySelectorAll("#pModal .m-info > *")].forEach((el,i)=>el.style.setProperty("--i",i));
+ $("pModal").querySelector(".m-panel").scrollTop=0;requestAnimationFrame(()=>$("pModal").classList.add("open"));lockScroll(true);setTimeout(()=>$("pModal").querySelector(".m-close").focus({preventScroll:true}),80)}
+function fillProd(){if(!cur)return;$("mCat").textContent=t("cat_"+cur.cat);$("mName").textContent=cur.name;$("mDesc").textContent=t("d_"+cur.id);
+ $("mFacts").innerHTML=[["f_wt",cur.wt],["f_life",t("days",{n:cur.life})],cur.spice?["f_spice",spice(cur.spice)]:["f_cat",t("cat_"+cur.cat)]].map(f=>"<div><span>"+esc(t(f[0]))+"</span><b>"+esc(f[1])+"</b></div>").join("");
+ $("mVars").innerHTML=cur.v.map((v,i)=>'<button type="button" data-v="'+i+'" aria-pressed="'+(i===vI)+'"><b>'+esc(t(v[0]))+"</b><span>"+money(v[1])+"</span></button>").join("");
+ $("mShopee").href=shopee(cur.name+" bali");$("mTokped").href=tokped(cur.name+" bali");mUpd()}
+function mUpd(){$("mQty").textContent=mq;$("mWaTxt").textContent=t("m_wa",{p:money(cur.v[vI][1]*mq)});$("mWa").href=waHref(prodMsg(cur,vI,mq))}
+$("mVars").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;vI=+b.dataset.v;$("mVars").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));mUpd()});
+$("mMinus").addEventListener("click",()=>{if(mq>1){mq--;mUpd()}});$("mPlus").addEventListener("click",()=>{if(mq<99){mq++;mUpd()}});
+function closeModal(){if(!$("pModal").classList.contains("open"))return;$("pModal").classList.remove("open");lockScroll(false);if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true})}
+$("pModal").addEventListener("click",e=>{if(e.target===$("pModal")||e.target.closest("[data-close]"))closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+function lockScroll(on){document.body.classList.toggle("lock",on);if(lenis)on?lenis.stop():lenis.start()}
+
+/* shared helpers */
+function fail(box,msg){box.textContent=msg;box.hidden=false;shake(box)}
+document.querySelectorAll(".pol").forEach(b=>b.addEventListener("click",()=>openProd(b.dataset.open)));
+
+/* partnership */
+let pk="res";
+function renderPTabs(){$("ptabs").innerHTML=PART.map(p=>'<button type="button" role="tab" data-pk="'+p.k+'" aria-selected="'+(p.k===pk)+'">'+esc(t("pt_"+p.k))+"</button>").join("")}
+function panelHTML(){const p=PART.find(x=>x.k===pk);const tiers=pk==="res"?'<div style="display:grid;gap:8px"><span style="font-weight:700">'+esc(t("tier_t"))+'</span><table class="tiers"><thead><tr><th>'+esc(t("tier_q"))+"</th><th>"+esc(t("tier_d"))+"</th></tr></thead><tbody><tr><td>"+esc(t("t1"))+"</td><td><b>15%</b></td></tr><tr><td>"+esc(t("t2"))+"</td><td><b>20%</b></td></tr><tr><td>"+esc(t("t3"))+"</td><td><b>25%</b></td></tr></tbody></table></div>":"";
+ return'<div class="pinfo"><h3>'+esc(t("pt_"+pk))+"</h3><p>"+esc(t("pd_"+pk))+"</p><ul>"+t("pl_"+pk).split("|").map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>"+tiers+'</div><div class="ph pphoto"><img src="'+U(p.img,900)+'" alt="" loading="lazy"></div>'}
+function renderPanel(animate){const el=$("ppanel");if(!animate||reduce){el.innerHTML=panelHTML();guard(el);return}el.classList.add("swap");setTimeout(()=>{el.innerHTML=panelHTML();guard(el);el.classList.remove("swap");stagger(el.querySelector(".pinfo"),60)},320)}
+$("ptabs").addEventListener("click",e=>{const b=e.target.closest("button");if(!b||b.dataset.pk===pk)return;pk=b.dataset.pk;$("ptabs").querySelectorAll("button").forEach(x=>x.setAttribute("aria-selected",String(x===b)));renderPanel(true)});
+
+
+/* contact: the one WhatsApp form */
+const TOPICS=["order","custom","partner","other"];let topic="order";
+function renderTopics(){$("kTopics").innerHTML=TOPICS.map(k=>'<button type="button" data-t="'+k+'" aria-pressed="'+(k===topic)+'">'+esc(t("tp_"+k))+"</button>").join("");$("kMsg").placeholder=t("kph_"+topic)}
+function setTopic(k){topic=k;$("kTopics").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.t===k)));const m=$("kMsg");m.placeholder=t("kph_"+k);anim(m,[{opacity:.4},{opacity:1}],{duration:500})}
+$("kTopics").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setTopic(b.dataset.t)});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-contact]");if(!b)return;e.preventDefault();const k=b.dataset.contact;setTopic(k);if(k==="partner"&&!$("kMsg").value.trim())$("kMsg").value=t("pt_"+pk)+": ";go("contact");setTimeout(()=>$("kName").focus({preventScroll:true}),1300)});
+$("kForm").addEventListener("submit",e=>{e.preventDefault();if(!$("kName").value.trim())return fail($("kErr"),t("e_name"));if(!$("kMsg").value.trim())return fail($("kErr"),t("e_msg"));
+ $("kErr").hidden=true;window.open(waHref(t("wa_contact",{name:$("kName").value.trim(),city:$("kCity").value.trim()||t("dash"),topic:t("tp_"+topic),msg:$("kMsg").value.trim()})),"_blank","noopener")});
+
+/* faq */
+let fOpen=0;
+function renderFaq(){$("faq").innerHTML=t("faq").map((q,i)=>'<li class="'+(i===fOpen?"open":"")+'"><button type="button" data-i="'+i+'" aria-expanded="'+(i===fOpen)+'"><span>'+esc(q[0])+'</span><span class="pm"><svg width="16" height="16"><use href="#i-plus"/></svg></span></button><div class="fbody"><div><p>'+esc(q[1])+"</p></div></div></li>").join("")}
+$("faq").addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(!b)return;const i=+b.dataset.i;fOpen=fOpen===i?-1:i;$("faq").querySelectorAll(":scope > li").forEach((li,k)=>{li.classList.toggle("open",k===fOpen);li.querySelector("button").setAttribute("aria-expanded",String(k===fOpen))})});
+
+/* announcement: one message at a time */
+let annI=0;setInterval(()=>{const sp=[...$("ann").children];if(!sp.length)return;const old=sp[annI%sp.length];annI=(annI+1)%sp.length;old.classList.remove("on");old.classList.add("off");setTimeout(()=>old.classList.remove("off"),900);sp[annI].classList.add("on")},reduce?6000:4500);
+
+/* language */
+function applyAll(){document.documentElement.lang=lang==="zh"?"zh-Hans":lang;
+ document.querySelectorAll("[data-i18n]").forEach(el=>el.textContent=t(el.dataset.i18n));
+ document.querySelectorAll("[data-i18n-html]").forEach(el=>el.innerHTML=t(el.dataset.i18nHtml));
+ document.querySelectorAll("[data-i18n-ph]").forEach(el=>el.placeholder=t(el.dataset.i18nPh));
+ document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===lang)));
+ document.querySelectorAll(".wa-link").forEach(a=>a.href=waHref(t("wa_general")));
+ $("ann").innerHTML=t("ann").map((x,i)=>"<span"+(i===annI?' class="on"':"")+">"+esc(x)+"</span>").join("");
+ renderCarousel();renderChips();buildGrid();renderHampers();
+ renderPTabs();renderPanel(false);renderTopics();renderFaq();if(cur&&$("pModal").classList.contains("open"))fillProd();
+ document.querySelectorAll("[data-count]").forEach(el=>{if(el.textContent!=="0")el.textContent=(+el.dataset.count).toLocaleString(lang==="id"?"id-ID":"en-US")+(el.dataset.suffix||"")});
+ requestAnimationFrame(()=>moveKnob($("langSeg"),true))}
+$("langSeg").addEventListener("click",e=>{const b=e.target.closest("button[data-lang]");if(!b||b.dataset.lang===lang)return;lang=b.dataset.lang;try{localStorage.setItem("dm-lang",lang)}catch(err){}
+ document.querySelectorAll("[data-lang]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.lang===lang)));moveKnob($("langSeg"));
+ const main=document.querySelector("main");const a=anim(main,[{opacity:1,filter:"blur(0)"},{opacity:.25,filter:"blur(3px)"}],{duration:220});const done=()=>{applyAll();anim(main,[{opacity:.25,filter:"blur(3px)"},{opacity:1,filter:"blur(0)"}],{duration:520})};if(a)a.onfinish=done;else done()});
+guard();applyAll();intro();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>moveKnob($("langSeg"),true));
+})();
+</script>
+</body>
+</html>
